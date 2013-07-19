@@ -1,0 +1,279 @@
+
+
+
+
+
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Compass to the Rescue</title>
+      <meta name="keywords" content=", ">
+      <meta name="description" content="How the Compass CSS &ldquo;Meta-Framework&rdquo; has taken the pain out of my stylesheets. Something for which I am eternally grateful.">
+      <meta name="viewport" content="width=device-width">
+
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+      <link rel="stylesheet" href="/assets/css/normalize.css">
+      <link rel="stylesheet" href="/assets/css/main.css">
+      <link rel="stylesheet" href="/assets/css/animate.css">
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata">
+      <script src="/js/vendor/modernizr-2.6.1.min.js"></script>
+      <script type="text/javascript" src="//use.typekit.net/gdm4xcy.js"></script>
+      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+      <!--[if lt IE 7]>
+          <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+      <![endif]-->
+
+      
+  
+   <div id="container">
+    <section id="sidebar">
+      <header>
+  <a href='/'>
+    <img id='avatar' src='/assets/images/avatar_med.png' title='Martin Owen'>
+  </a>
+</header>
+<nav class='main'>
+  <ul>
+    <li><a href='/about.html'>about</a></li>
+    <li><a href='/archives.html'>archives</a></li>
+    <li>
+      <a href='/atom.xml'>
+        subscribe
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class='elsewhere'>
+  <ul class='social-network-links'>
+    <li>
+      <a class='github' href='http://github.com/mowen'>
+        github
+      </a>
+    </li>
+    <li>
+      <a class='lastfm' href='http://last.fm/user/martyziff'>
+        last.fm
+      </a>
+    </li>
+    <li>
+      <a class='twitter' href='http://twitter.com/martinowen'>
+        twitter
+      </a>
+    </li>
+    <li>
+      <a class='facebook' href='http://facebook.com/martowen'>
+        facebook
+      </a>
+    </li>
+    <li>
+      <a class='delicious' href='http://delicious.com/mintyboy'>
+        delicious
+      </a>
+    </li>
+    <li>
+      <a class='linkedin' href='http://uk.linkedin.com/in/martinowenuk'>
+        linkedin
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    </section>
+    <section id="main" role="main">
+      
+        <article>
+  <header>
+    <h1>Compass to the Rescue</h1>
+    <h2>
+      How the Compass CSS &ldquo;Meta-Framework&rdquo; has taken the pain out of my stylesheets. Something for which I am eternally grateful.
+    </h2>
+    <div class='meta'>
+      <ul class='tags'>
+        <li>Oct 25, 2009</li>
+        <li>
+          &middot;
+        </li>
+        <li>
+          <a href='/blog/2009/10/25/compass-to-the-rescue.html#disqus_thread'></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class='body'>
+    <h3>
+    <span class="caps"><span class="caps">CSS</span></span> and Me</h3>
+    <p>For years I’ve been on the lookout for things that simplify the process of writing <span class="caps"><span class="caps">CSS</span></span> because, as I’m a programmer, I <a href="http://www.betaversion.org/~stefano/linotype/news/169/">suck at it</a>. I’ve tried many times in the past to persevere with my own designs, and although I know how the whole <span class="caps"><span class="caps">HTML</span></span>/<span class="caps"><span class="caps">CSS</span></span> thing hangs together, I always end up going with a template lifted from the web, with some of my own minor tweaks.</p>
+    <p>This is probably because I lack the tools to build layouts, as like most non-designers, I don’t want to fork out a Photoshop licence fee. So I’m always keen to try out open source tools that make my <span class="caps"><span class="caps">CSS</span></span> easier.</p>
+    <h3>
+    <span class="caps"><span class="caps">CSS</span></span> for Programmers</h3>
+    <p>The first time I used <a href="http://sass-lang.com/"><span class="caps"><span class="caps">SASS</span></span></a> I was quite impressed, particularly with the ability to <a href="http://sass-lang.com/#variables">define variables</a>, as it meant that I wouldn’t have to use Find and Replace every two minutes. But I still saw it as a second-class offshoot of <a href="http://haml-lang.com/"><span class="caps"><span class="caps">HAML</span></span></a>. Now that I’ve got to know it I think of it as the preprocessor that <span class="caps"><span class="caps">CSS</span></span> has needed for so long.</p>
+    <h4>Greater than the sum of its parts</h4>
+    <p>At the same time as I was initially playing with <span class="caps"><span class="caps">HAML</span></span> and <span class="caps"><span class="caps">SASS</span></span>, I also came across <a href="http://www.blueprintcss.org/">Blueprint</a> and thought that it was the answer to my <span class="caps"><span class="caps">CSS</span></span> prayers. But after a while I realised that something was still missing. Then I found <a href="http://compass-style.org/">Compass</a>.</p>
+    <p>Compass calls itself a “Meta-Framework”, a term I can’t resist (we’ve reached the point where we have frameworks of frameworks, which makes me chuckle.) It combines the various <span class="caps"><span class="caps">CSS</span></span> frameworks (Blueprint, Yahoo! <span class="caps">UI</span>, 960 Grid System) with <span class="caps"><span class="caps">SASS</span></span> to create something that is much better than the sum of its parts.</p>
+    <p>By default it uses Blueprint to provide a grid system and baseline. It provides <span class="caps"><span class="caps">SASS</span></span> mixins (which you can think of as <span class="caps"><span class="caps">CSS</span></span> macros) which allow you to <a href="http://wiki.github.com/chriseppstein/compass/blueprint-documentation-grid-module">define your grid in <span class="caps"><span class="caps">SASS</span></span> without modifiying the <span class="caps"><span class="caps">HTML</span></span></a>. I like this as it keeps the layout in the <span class="caps"><span class="caps">CSS</span></span> where it belongs.</p>
+    <h4>Good with colours</h4>
+    <p>Compass also features <span class="caps"><span class="caps">SASS</span></span> mixins for manipulating colours, via a module named <a href="http://github.com/chriseppstein/compass-colors">compass-colors</a>. The module allows you to lighten and darken colours, and even adjust the hue and saturation:</p>
+    <pre>!font_color= lighten(#000, 20)&#x000A;!other_font_color= adjust-hue(#cc3, 20deg)</pre>
+    <p>I’ve liked the idea of colour manipulation functions since I first saw them in the <a href="http://nodebox.net/code/index.php/Colors">NodeBox Colors</a> library. Compass-colors helps you to build themes with <a href="http://chriseppstein.github.com/compass-colors/">complimentary and analogous color mixins</a>.</p>
+    <p>There’s also a <a href="http://github.com/chriseppstein/compass/blob/master/frameworks/compass/stylesheets/compass/utilities/links/_link_colors.sass">link_colors mixin</a> which defines all of the colours for the various link pseudo-classes in one mixin call.</p>
+    <p><strong><span class="caps"><span class="caps">UPDATE</span></span>:</strong> <a href="http://nex-3.com/posts/89-powerful-color-manipulation-with-sass">compass-colors is now part of <span class="caps"><span class="caps">SASS</span></span></a> as of v<span class="caps">2.4</span></p>
+    <h4>Syntax</h4>
+    <p>My only complaint with <span class="caps"><span class="caps">SASS</span></span> is that the syntax seems a little unnatural. Mixins are prefixed with a “+” and variables are prefixed with a “!”, which I don’t like because it makes conditional statements look a little strange:</p>
+    <pre>@if !bold&#x000A;  font-weight: bold</pre>
+    <p>Which to me reads as “if bold is false, set the font-weight to bold” when in fact it means the opposite. A more standard variable prefix like “$” would have seemed more natural.</p>
+    <p>But that’s just me nit-picking. I love the project after all. If you’re a programmer who hates <span class="caps"><span class="caps">CSS</span></span>, you really should give <span class="caps"><span class="caps">SASS</span></span> and Compass a try.</p>
+  </div>
+</article>
+<div id='other-articles'>
+  <div class='older'>
+    <h2>
+      Older Articles
+    </h2>
+    <ul>
+      <li>
+        <h3>
+          <a href='/blog/2009/10/19/blogging-with-webby.html' title='My experiences of blogging with the Webby static site generator, and not looking back.'>
+            &laquo; Blogging with Webby
+          </a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href='/blog/2009/08/10/my-5-favourite-things-about-git.html' title="The 5 things I like most about Git, Linus Torvalds' distributed version system.">
+            &laquo; My 5 Favourite Things About Git
+          </a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href='/blog/2009/06/01/twitter-racing-at-howduino-liverpool.html' title='My account of the Howduino Arduino hacking event in Liverpool in May 2009.'>
+            &laquo; Twitter Racing at Howduino Liverpool
+          </a>
+        </h3>
+      </li>
+    </ul>
+  </div>
+  <div class='newer'>
+    <h2>
+      Newer Articles
+    </h2>
+    <ul>
+      <li>
+        <h3>
+          <a href='/blog/2009/11/14/playing-with-mozilla-ubiquity.html' title="Getting to know Mozilla's impressive new Ubiquity Firefox extension, and my experiences of working on a command for it.">
+            Playing with Mozilla Ubiquity &raquo;
+          </a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href='/blog/2010/02/03/tips-for-emacs-ibuffer.html' title='Some settings for the Emacs Ibuffer mode, vital for managing large numbers of buffers.'>
+            Tips for using Emacs Ibuffer &raquo;
+          </a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href='/blog/2011/05/14/func-unit-and-sauce-labs.html' title='How to use the FuncUnit web application testing framework with cloud-based Selenium service Sauce Labs'>
+            How to use FuncUnit with Sauce Labs &raquo;
+          </a>
+        </h3>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class='comments'>
+  <div id='disqus_thread'></div>
+  <script src='http://disqus.com/forums/martinowen/embed.js' type='text/javascript'></script>
+  <noscript>
+    <a href='http://disqus.com/forums/martinowen/?url=ref'>
+      View the discussion thread
+    </a>
+  </noscript>
+</div>
+<!-- / disqus adds too much visual crap -->
+<style type='text/css'>
+  <style>
+    .dsq-dc-logo {
+      display: none !important; }
+  </style>
+</style>
+<script>
+  (function() {
+    var links = document.getElementsByTagName('a');
+    var query = '?';
+    for(var i = 0; i < links.length; i++) {
+      if(links[i].href.indexOf('#disqus_thread') >= 0) {
+        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+      }
+    }
+    document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/martinowen/get_num_replies.js' + query + '"></' + 'script>');
+  })();
+</script>
+
+      
+    </section>
+    <footer>
+      <nav class='tags'>
+  <ul>
+    <li>
+      <a class='tag' href='/tags/arduino/'>arduino&nbsp;(1)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/emacs/'>emacs&nbsp;(1)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/erlang/'>erlang&nbsp;(1)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/event/'>event&nbsp;(2)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/funcunit/'>funcunit&nbsp;(1)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/git/'>git&nbsp;(1)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/javascript/'>javascript&nbsp;(2)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/liverpool/'>liverpool&nbsp;(4)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/slides/'>slides&nbsp;(2)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/testing/'>testing&nbsp;(1)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/tools/'>tools&nbsp;(1)</a>
+    </li>
+  </ul>
+</nav>
+<small>
+  <p>&copy; 2013 Martin Owen | Tools: <a href="http://nanoc.stoneship.org/">nanoc</a>, <a href="http://haml-lang.com/"><span class="caps">HAML</span>/<span class="caps">SASS</span></a> ,<a href="http://compass-style.org/">Compass</a>, <a href="http://html5boilerplate.com/">HTML5BP</a>, <a href="http://coffeescript.org/">CoffeeScript</a></p>
+</small>
+
+    </footer>
+    </div>
+  </div>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+      <script src="/js/plugins.js"></script>
+      <script src="/js/main.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+          var _gaq=[['_setAccount','UA-3614897-1'],['_trackPageview']];
+          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+  </body>
