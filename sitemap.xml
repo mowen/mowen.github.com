@@ -1,36 +1,36 @@
-
-
-
-
-
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title></title>
-      <meta name="keywords" content=", ">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="keywords" content=", ">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-      <link rel="stylesheet" href="/assets/css/normalize.css">
-      <link rel="stylesheet" href="/assets/css/main.css">
-      <link rel="stylesheet" href="/assets/css/animate.css">
-      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata">
-      <script src="/js/vendor/modernizr-2.6.1.min.js"></script>
-      <script type="text/javascript" src="//use.typekit.net/gdm4xcy.js"></script>
-      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <script src="/js/vendor/modernizr-2.6.1.min.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/gdm4xcy.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
-      <!--[if lt IE 7]>
-          <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-      <![endif]-->
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
 
-      
+    
   
-   <div id="container">
-    <section id="sidebar">
-      <header>
+    <div id="container">
+      <section id="sidebar">
+        <header>
   <a href='/'>
     <img id='avatar' src='/assets/images/avatar_med.png' title='Martin Owen'>
   </a>
@@ -81,16 +81,16 @@
   </ul>
 </nav>
 
-    </section>
-    <section id="main" role="main">
-      
-        <section >
-          <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>http://martinowen.net/</loc><lastmod>2012-02-25</lastmod></url><url><loc>http://martinowen.net/about.html</loc><lastmod>2013-07-19</lastmod></url><url><loc>http://martinowen.net/blog/2008/04/28/comet-talk.html</loc><lastmod>2011-12-08</lastmod></url><url><loc>http://martinowen.net/blog/2008/05/28/erlang-talk.html</loc><lastmod>2012-02-27</lastmod></url><url><loc>http://martinowen.net/blog/2009/01/12/barcamp-liverpool.html</loc><lastmod>2012-02-27</lastmod></url><url><loc>http://martinowen.net/blog/2009/06/01/twitter-racing-at-howduino-liverpool.html</loc><lastmod>2011-12-08</lastmod></url><url><loc>http://martinowen.net/blog/2009/08/10/my-5-favourite-things-about-git.html</loc><lastmod>2011-12-08</lastmod></url><url><loc>http://martinowen.net/blog/2009/10/19/blogging-with-webby.html</loc><lastmod>2011-12-08</lastmod></url><url><loc>http://martinowen.net/blog/2009/10/25/compass-to-the-rescue.html</loc><lastmod>2011-12-08</lastmod></url><url><loc>http://martinowen.net/blog/2009/11/14/playing-with-mozilla-ubiquity.html</loc><lastmod>2011-12-08</lastmod></url><url><loc>http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html</loc><lastmod>2012-06-02</lastmod></url><url><loc>http://martinowen.net/blog/2011/05/14/func-unit-and-sauce-labs.html</loc><lastmod>2012-06-02</lastmod></url><url><loc>http://martinowen.net/js/main.js</loc><lastmod>2013-05-26</lastmod></url></urlset>
-        </section>
-      
-    </section>
-    <footer>
-      <nav class='tags'>
+      </section>
+      <section id="main" role="main">
+        
+          <section >
+            <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>http://martinowen.net/</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/about.html</loc><lastmod>2013-07-17</lastmod></url><url><loc>http://martinowen.net/blog/2008/04/28/comet-talk.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2008/05/28/erlang-talk.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/01/12/barcamp-liverpool.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/06/01/twitter-racing-at-howduino-liverpool.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/08/10/my-5-favourite-things-about-git.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/10/19/blogging-with-webby.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/10/25/compass-to-the-rescue.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/11/14/playing-with-mozilla-ubiquity.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2011/05/14/func-unit-and-sauce-labs.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/js/main.js</loc><lastmod>2013-05-27</lastmod></url></urlset>
+          </section>
+        
+      </section>
+      <footer>
+        <nav class='tags'>
   <ul>
     <li>
       <a class='tag' href='/tags/arduino/'>arduino&nbsp;(1)</a>
@@ -131,22 +131,22 @@
   <p>&copy; 2013 Martin Owen | Tools: <a href="http://nanoc.stoneship.org/">nanoc</a>, <a href="http://haml-lang.com/"><span class="caps">HAML</span>/<span class="caps">SASS</span></a> ,<a href="http://compass-style.org/">Compass</a>, <a href="http://html5boilerplate.com/">HTML5BP</a>, <a href="http://coffeescript.org/">CoffeeScript</a></p>
 </small>
 
-    </footer>
+      </footer>
     </div>
-  </div>
 
-  <!-- JavaScript at the bottom for fast page loading -->
+    <!-- JavaScript at the bottom for fast page loading -->
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-      <script src="/js/plugins.js"></script>
-      <script src="/js/main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
-          var _gaq=[['_setAccount','UA-3614897-1'],['_trackPageview']];
-          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-          s.parentNode.insertBefore(g,s)}(document,'script'));
-      </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-3614897-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
   </body>
+</html>

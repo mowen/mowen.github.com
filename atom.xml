@@ -1,36 +1,36 @@
-
-
-
-
-
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>martinowen.net</title>
-      <meta name="keywords" content=", ">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>martinowen.net</title>
+    <meta name="keywords" content=", ">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-      <link rel="stylesheet" href="/assets/css/normalize.css">
-      <link rel="stylesheet" href="/assets/css/main.css">
-      <link rel="stylesheet" href="/assets/css/animate.css">
-      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata">
-      <script src="/js/vendor/modernizr-2.6.1.min.js"></script>
-      <script type="text/javascript" src="//use.typekit.net/gdm4xcy.js"></script>
-      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <script src="/js/vendor/modernizr-2.6.1.min.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/gdm4xcy.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
-      <!--[if lt IE 7]>
-          <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-      <![endif]-->
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
 
-      
+    
   
-   <div id="container">
-    <section id="sidebar">
-      <header>
+    <div id="container">
+      <section id="sidebar">
+        <header>
   <a href='/'>
     <img id='avatar' src='/assets/images/avatar_med.png' title='Martin Owen'>
   </a>
@@ -81,15 +81,15 @@
   </ul>
 </nav>
 
-    </section>
-    <section id="main" role="main">
-      
-        <section >
-          <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>http://martinowen.net/</id><title>martinowen.net</title>
+      </section>
+      <section id="main" role="main">
+        
+          <section >
+            <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>http://martinowen.net/</id><title>martinowen.net</title>
 <updated>2011-05-<span class="caps">13T23</span>:00:<span class="caps">00Z</span></updated><link rel="alternate" href="http://martinowen.net/">
 <link rel="self" href="http://martinowen.net/atom.xml">
 <author><name>Martin Owen</name><uri>http://martinowen.net</uri></author><entry><id>tag:martinowen.net,2011-05-14:/blog/2011/05/14/func-unit-and-sauce-labs.html</id><title type="html">How to use FuncUnit with Sauce Labs</title>
-<published>2011-05-<span class="caps">13T23</span>:00:<span class="caps">00Z</span></published><updated>2012-06-<span class="caps">02T10</span>:17:<span class="caps">54Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2011/05/14/func-unit-and-sauce-labs.html">
+<published>2011-05-<span class="caps">13T23</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2011/05/14/func-unit-and-sauce-labs.html">
 <content type="html">&lt;h3&gt;Functional web application testing with FuncUnit&lt;/h3&gt;
 &lt;p&gt;We’ve recently started using the &lt;a href=”http://funcunit.com/”&gt;FuncUnit&lt;/a&gt; automated web application testing framework where I work. It is built on top of &lt;a href=”http://seleniumhq.org/”&gt;Selenium&lt;/a&gt;, but adds a lot of value as it uses jQuery’s selector syntax, which is much easier to work with than Selenium’s XPath selectors.&lt;/p&gt;
 &lt;p&gt;FuncUnit also provides &lt;a href=”http://javascriptmvc.com/docs/FuncUnit.html#&amp;amp;who=mastering”&gt;many helper functions&lt;/a&gt; for waiting until elements exist on the page. This is invaluable if you are doing a lot of &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">DOM</span>&lt;/span&gt;&lt;/span&gt; manipulation in your application, which we certainly are.&lt;/p&gt;
@@ -145,7 +145,7 @@
 &lt;h3&gt;Something to note&lt;/h3&gt;
 &lt;p&gt;I wouldn’t recommend running tests on Sauce Labs very often, as it is much slower than running locally, and isn’t possible to debug.&lt;/p&gt;
 &lt;p&gt;The best way to run tests during development is to open your &lt;code&gt;funcunit.html&lt;/code&gt; page in the browser you want to test in, the tests will then execute very quickly in a pop-up window.&lt;/p&gt;</content><summary type="html">How to use the FuncUnit web application testing framework with cloud-based Selenium service Sauce Labs</summary></entry><entry><id>tag:martinowen.net,2010-02-03:/blog/2010/02/03/tips-for-emacs-ibuffer.html</id><title type="html">Tips for using Emacs Ibuffer</title>
-<published>2010-02-<span class="caps">03T00</span>:00:<span class="caps">00Z</span></published><updated>2012-06-<span class="caps">02T10</span>:17:<span class="caps">33Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html">
+<published>2010-02-<span class="caps">03T00</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html">
 <content type="html">&lt;p&gt;I’ve found that one of the most useful features of Emacs is also one of the most sparsely documented: &lt;a href=”http://www.emacswiki.org/emacs/IbufferMode”&gt;Ibuffer&lt;/a&gt;. It provides a way of filtering and then grouping the list of buffers that you currently have open, and greatly improves Emacs’ usability.&lt;/p&gt;
 &lt;p&gt;&lt;img src=”/assets/images/ibuffer.jpg” alt=”“&gt;&lt;/p&gt;
 &lt;h3&gt;Using Ibuffer&lt;/h3&gt;
@@ -235,7 +235,7 @@
 &lt;p&gt;This is something I had a problem with when I upgraded to Emacs &lt;span class=”caps”&gt;<span class="caps">23.1.</span>&lt;/span&gt; The latest version of Ibuffer doesn’t filter Dired buffers by the filename of the directory. This isn’t what I want – if I specify I filename filter I want any buffer with that filename to appear.&lt;/p&gt;
 &lt;p&gt;Rather than doing diffs against the &lt;span class=”caps”&gt;<span class="caps">22.3</span>&lt;/span&gt; versions of the Ibuffer files to determine the changes (and possibly undo them) I’ve just copied the old versions from the ‘lisp’ directory of Emacs &lt;span class=”caps”&gt;<span class="caps">22.3</span>&lt;/span&gt; To a ‘vendor’ directory in my .emacs.d and loaded that.&lt;/p&gt;
 &lt;p&gt;If I find a better way to solve this problem I’ll post an update.&lt;/p&gt;</content><summary type="html">Some settings for the Emacs Ibuffer mode, vital for managing large numbers of buffers.</summary></entry><entry><id>tag:martinowen.net,2009-11-14:/blog/2009/11/14/playing-with-mozilla-ubiquity.html</id><title type="html">Playing with Mozilla Ubiquity</title>
-<published>2009-11-<span class="caps">14T00</span>:00:<span class="caps">00Z</span></published><updated>2011-06-<span class="caps">04T20</span>:31:<span class="caps">44Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2009/11/14/playing-with-mozilla-ubiquity.html">
+<published>2009-11-<span class="caps">14T00</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2009/11/14/playing-with-mozilla-ubiquity.html">
 <content type="html">&lt;p&gt;I took a look at &lt;a href=”https://mozillalabs.com/ubiquity/”&gt;Mozilla Ubiquity&lt;/a&gt; recently, which is best described as an attempt at a natural language launcher for web services. It reminds me of the Mac launcher app &lt;a href=”http://en.wikipedia.org/wiki/Quicksilver_%28software%29”&gt;Quicksilver&lt;/a&gt;. For example, if you type “weather liverpool” into it, you get the weather for Liverpool.&lt;/p&gt;
 &lt;p&gt;I personally really like this kind of thing because it means that I don’t have to use the mouse.&lt;/p&gt;
 &lt;h3&gt;The built-in commands&lt;/h3&gt;
@@ -255,7 +255,7 @@
 &lt;p&gt;If you’re going to try to develop commands, I’d suggest using the &lt;code&gt;CmdUtils.log()&lt;/code&gt; utility function to write debug messages to the console log in Firebug. The messages will only appear if you have turned on “Show Chrome Messages” on the Console menu.&lt;/p&gt;
 &lt;p&gt;I eventually got the command working and the changes were merged into the master branch.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">UPDATE</span>&lt;/span&gt;&lt;/span&gt; 2010/03:&lt;/strong&gt; Ubiquity has now been put on the back-burner by Mozilla, in favour of &lt;a href=”https://jetpack.mozillalabs.com/”&gt;Jetpack&lt;/a&gt;. As the developers found it quite difficult to upgrade the latest version to work with Firefox &lt;span class=”caps”&gt;<span class="caps">3.6</span>&lt;/span&gt;, only the earlier &lt;span class=”caps”&gt;<span class="caps">0.1</span>&lt;/span&gt; version of the extension has been upgraded to work with it.&lt;/p&gt;</content><summary type="html">Getting to know Mozilla’s impressive new Ubiquity Firefox extension, and my experiences of working on a command for it.</summary></entry><entry><id>tag:martinowen.net,2009-10-25:/blog/2009/10/25/compass-to-the-rescue.html</id><title type="html">Compass to the Rescue</title>
-<published>2009-10-<span class="caps">24T23</span>:00:<span class="caps">00Z</span></published><updated>2011-08-<span class="caps">27T21</span>:10:<span class="caps">35Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2009/10/25/compass-to-the-rescue.html">
+<published>2009-10-<span class="caps">24T23</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2009/10/25/compass-to-the-rescue.html">
 <content type="html">&lt;h3&gt;
 &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; and Me&lt;/h3&gt;
 &lt;p&gt;For years I’ve been on the lookout for things that simplify the process of writing &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; because, as I’m a programmer, I &lt;a href=”http://www.betaversion.org/~stefano/linotype/news/169/”&gt;suck at it&lt;/a&gt;. I’ve tried many times in the past to persevere with my own designs, and although I know how the whole &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HTML</span>&lt;/span&gt;&lt;/span&gt;/&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; thing hangs together, I always end up going with a template lifted from the web, with some of my own minor tweaks.&lt;/p&gt;
@@ -282,7 +282,7 @@
 &lt;/pre&gt;
 &lt;p&gt;Which to me reads as “if bold is false, set the font-weight to bold” when in fact it means the opposite. A more standard variable prefix like “$” would have seemed more natural.&lt;/p&gt;
 &lt;p&gt;But that’s just me nit-picking. I love the project after all. If you’re a programmer who hates &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt;, you really should give &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt; and Compass a try.&lt;/p&gt;</content><summary type="html">How the Compass <span class="caps">CSS</span> &amp;ldquo;Meta-Framework&amp;rdquo; has taken the pain out of my stylesheets. Something for which I am eternally grateful.</summary></entry><entry><id>tag:martinowen.net,2009-10-19:/blog/2009/10/19/blogging-with-webby.html</id><title type="html">Blogging with Webby</title>
-<published>2009-10-<span class="caps">18T23</span>:00:<span class="caps">00Z</span></published><updated>2011-06-<span class="caps">04T20</span>:37:<span class="caps">42Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2009/10/19/blogging-with-webby.html">
+<published>2009-10-<span class="caps">18T23</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2009/10/19/blogging-with-webby.html">
 <content type="html">&lt;h3&gt;Blogger’s Block&lt;/h3&gt;
 &lt;p&gt;I very rarely blog. I’ve posted a total of three times in the past eighteen months. Even when I have things to blog about, and I even start a post, other things get in the way and the posts get left on the shelf. I’ve decided that this is due to two things:&lt;/p&gt;
 &lt;ol&gt;
@@ -298,11 +298,11 @@
 &lt;p&gt;And so I discovered Webby. This isn’t the first static site generator written in Ruby that I’ve played with (&lt;a href=”http://staticmatic.rubyforge.org/”&gt;StaticMatic&lt;/a&gt; and &lt;a href=”http://jekyllrb.com/”&gt;Jekyll&lt;/a&gt; being the others) but it is the one I’ve got along with most easily. &lt;em&gt;I was very close to going with Jekyll, but I didn’t like the lack of support for &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HAML</span>&lt;/span&gt;&lt;/span&gt; and didn’t want to use a fork.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I’m also using &lt;a href=”http://ultraviolet.rubyforge.org/”&gt;Ultraviolet&lt;/a&gt; with for syntax highlighting, which uses Textmate bundles to support every language I could ever imagine blogging about.&lt;/p&gt;
 &lt;p&gt;My setup isn’t perfect yet, but with help from existing Webby users (notably &lt;a href=”http://aaronqian.com/”&gt;Aaron Qian&lt;/a&gt;) and &lt;a href=”http://disqus.com/”&gt;Disqus&lt;/a&gt; for comments, I’m hoping to have something which rivals my old Wordpress install.&lt;/p&gt;</content><summary type="html">My experiences of blogging with the Webby static site generator, and not looking back.</summary></entry></feed>
-        </section>
-      
-    </section>
-    <footer>
-      <nav class='tags'>
+          </section>
+        
+      </section>
+      <footer>
+        <nav class='tags'>
   <ul>
     <li>
       <a class='tag' href='/tags/arduino/'>arduino&nbsp;(1)</a>
@@ -343,22 +343,22 @@
   <p>&copy; 2013 Martin Owen | Tools: <a href="http://nanoc.stoneship.org/">nanoc</a>, <a href="http://haml-lang.com/"><span class="caps">HAML</span>/<span class="caps">SASS</span></a> ,<a href="http://compass-style.org/">Compass</a>, <a href="http://html5boilerplate.com/">HTML5BP</a>, <a href="http://coffeescript.org/">CoffeeScript</a></p>
 </small>
 
-    </footer>
+      </footer>
     </div>
-  </div>
 
-  <!-- JavaScript at the bottom for fast page loading -->
+    <!-- JavaScript at the bottom for fast page loading -->
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-      <script src="/js/plugins.js"></script>
-      <script src="/js/main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
-          var _gaq=[['_setAccount','UA-3614897-1'],['_trackPageview']];
-          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-          s.parentNode.insertBefore(g,s)}(document,'script'));
-      </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-3614897-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
   </body>
+</html>
