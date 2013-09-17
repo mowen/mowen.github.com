@@ -98,6 +98,9 @@ Sitemap: http://martinowen.net/sitemap.xml
         <nav class='tags'>
   <ul>
     <li>
+      <a class='tag' href='/tags/.net/'>.net&nbsp;(1)</a>
+    </li>
+    <li>
       <a class='tag' href='/tags/arduino/'>arduino&nbsp;(1)</a>
     </li>
     <li>
@@ -120,6 +123,9 @@ Sitemap: http://martinowen.net/sitemap.xml
     </li>
     <li>
       <a class='tag' href='/tags/liverpool/'>liverpool&nbsp;(4)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/powershell/'>powershell&nbsp;(1)</a>
     </li>
     <li>
       <a class='tag' href='/tags/slides/'>slides&nbsp;(2)</a>

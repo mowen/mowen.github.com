@@ -85,13 +85,16 @@
       <section id="main" role="main">
         
           <section >
-            <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>http://martinowen.net/</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/about.html</loc><lastmod>2013-07-17</lastmod></url><url><loc>http://martinowen.net/blog/2008/04/28/comet-talk.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2008/05/28/erlang-talk.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/01/12/barcamp-liverpool.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/06/01/twitter-racing-at-howduino-liverpool.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/08/10/my-5-favourite-things-about-git.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/10/19/blogging-with-webby.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/10/25/compass-to-the-rescue.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/11/14/playing-with-mozilla-ubiquity.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2011/05/14/func-unit-and-sauce-labs.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/js/main.js</loc><lastmod>2013-05-27</lastmod></url></urlset>
+            <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>http://martinowen.net/</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/about.html</loc><lastmod>2013-07-17</lastmod></url><url><loc>http://martinowen.net/blog/2008/04/28/comet-talk.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2008/05/28/erlang-talk.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/01/12/barcamp-liverpool.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/06/01/twitter-racing-at-howduino-liverpool.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/08/10/my-5-favourite-things-about-git.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/10/19/blogging-with-webby.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/10/25/compass-to-the-rescue.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2009/11/14/playing-with-mozilla-ubiquity.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2011/05/14/func-unit-and-sauce-labs.html</loc><lastmod>2013-04-06</lastmod></url><url><loc>http://martinowen.net/blog/2013/08/30/better-windows-development-with-powershell.html</loc><lastmod>2013-09-17</lastmod></url><url><loc>http://martinowen.net/js/main.js</loc><lastmod>2013-05-27</lastmod></url></urlset>
           </section>
         
       </section>
       <footer>
         <nav class='tags'>
   <ul>
+    <li>
+      <a class='tag' href='/tags/.net/'>.net&nbsp;(1)</a>
+    </li>
     <li>
       <a class='tag' href='/tags/arduino/'>arduino&nbsp;(1)</a>
     </li>
@@ -115,6 +118,9 @@
     </li>
     <li>
       <a class='tag' href='/tags/liverpool/'>liverpool&nbsp;(4)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/powershell/'>powershell&nbsp;(1)</a>
     </li>
     <li>
       <a class='tag' href='/tags/slides/'>slides&nbsp;(2)</a>

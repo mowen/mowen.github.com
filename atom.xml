@@ -86,9 +86,82 @@
         
           <section >
             <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>http://martinowen.net/</id><title>martinowen.net</title>
-<updated>2011-05-<span class="caps">13T23</span>:00:<span class="caps">00Z</span></updated><link rel="alternate" href="http://martinowen.net/">
+<updated>2013-08-<span class="caps">29T23</span>:00:<span class="caps">00Z</span></updated><link rel="alternate" href="http://martinowen.net/">
 <link rel="self" href="http://martinowen.net/atom.xml">
-<author><name>Martin Owen</name><uri>http://martinowen.net</uri></author><entry><id>tag:martinowen.net,2011-05-14:/blog/2011/05/14/func-unit-and-sauce-labs.html</id><title type="html">How to use FuncUnit with Sauce Labs</title>
+<author><name>Martin Owen</name><uri>http://martinowen.net</uri></author><entry><id>tag:martinowen.net,2013-08-30:/blog/2013/08/30/better-windows-development-with-powershell.html</id><title type="html">Better Windows development with PowerShell</title>
+<published>2013-08-<span class="caps">29T23</span>:00:<span class="caps">00Z</span></published><updated>2013-09-<span class="caps">17T21</span>:56:<span class="caps">52Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2013/08/30/better-windows-development-with-powershell.html">
+<content type="html">&lt;h1&gt;Overcoming my PowerShell cynicism&lt;/h1&gt;
+&lt;p&gt;I’ve always loved Unix shells for their simplicity and power. I was sure that PowerShell was nothing in comparison, just an iteration of Windows batch files or VBScript (two of the most unfriendly scripting environments I’ve ever come across). My opinion changed recently when I read the excellent book &lt;a href=”http://shop.oreilly.com/product/0636920024491.do”&gt;Windows PowerShell for Developers&lt;/a&gt; by Douglas Finke.&lt;/p&gt;
+&lt;p&gt;If you are a .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; developer I highly recommend Finke’s book. He gives a really good introduction to PowerShell and also highlights how PowerShell’s integration with the .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; framework can enable you to explore APIs at the console.&lt;/p&gt;
+&lt;p&gt;He covers things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Embedding PowerShell into .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; applications&lt;/li&gt;
+  &lt;li&gt;Querying &lt;span class=”caps”&gt;<span class="caps">XML</span>&lt;/span&gt; and Json web services (using both &lt;code&gt;System.Net.WebClient&lt;/code&gt; and the new &lt;code&gt;Invoke-RestMethod&lt;/code&gt; cmdlet introduced in PowerShell &lt;span class=”caps”&gt;<span class="caps">3.0</span>&lt;/span&gt;)&lt;/li&gt;
+  &lt;li&gt;Building GUIs with the &lt;a href=”http://showui.codeplex.com/”&gt;Show&lt;span class=”caps”&gt;<span class="caps">UI</span>&lt;/span&gt;&lt;/a&gt; PowerShell module&lt;/li&gt;
+  &lt;li&gt;Using Roslyn to query the code in a .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; &lt;span class=”caps”&gt;<span class="caps">DLL</span>&lt;/span&gt; and extract syntax trees from it&lt;/li&gt;
+  &lt;li&gt;Writing a &lt;span class=”caps”&gt;<span class="caps">DSL</span>&lt;/span&gt; (he creates a &lt;span class=”caps”&gt;<span class="caps">DSL</span>&lt;/span&gt; to generate GraphViz digraphs)&lt;/li&gt;
+  &lt;li&gt;Automating &lt;span class=”caps”&gt;<span class="caps">COM</span>&lt;/span&gt; applications such as Excel and Internet Explorer&lt;/li&gt;
+&lt;/ul&gt;&lt;h1&gt;PowerShell = ObjectShell&lt;/h1&gt;
+&lt;p&gt;What really blew me away about PowerShell is the pipeline. Unix piping always felt really elegant, but PowerShell improves on it by piping objects rather than streams. This is why I think Microsoft chose the wrong name - I think ObjectShell would have been more appropriate.&lt;/p&gt;
+&lt;p&gt;Add to the object piping great &lt;span class=”caps”&gt;<span class="caps">CSV</span>&lt;/span&gt;, &lt;span class=”caps”&gt;<span class="caps">XML</span>&lt;/span&gt; (and in PowerShell &lt;span class=”caps”&gt;<span class="caps">3.0</span>&lt;/span&gt; Json) importing and exporting commands, plus the ability to invoke &lt;span class=”caps”&gt;<span class="caps">REST</span>&lt;/span&gt; methods natively, and you’ve got a very nice glue language indeed.&lt;/p&gt;
+&lt;p&gt;The example below shows how the &lt;code&gt;Invoke-RestMethod&lt;/code&gt; cmdlet can pipe an &lt;span class=”caps”&gt;<span class="caps">XML</span>&lt;/span&gt; atom feed to a block that will be run foreach &lt;span class=”caps”&gt;<span class="caps">XML</span>&lt;/span&gt; node.  It allows me to get a very simple command line view of the new messages in my GMail inbox:&lt;/p&gt;
+&lt;div class=”highlight”&gt;&lt;table&gt;&lt;tr&gt;
+&lt;td class=”gutter”&gt;&lt;pre class=”line-numbers”&gt;&lt;span class=”line-number”&gt;1&lt;/span&gt;
+&lt;span class=”line-number”&gt;2&lt;/span&gt;
+&lt;span class=”line-number”&gt;3&lt;/span&gt;
+&lt;span class=”line-number”&gt;4&lt;/span&gt;
+&lt;span class=”line-number”&gt;5&lt;/span&gt;
+&lt;span class=”line-number”&gt;6&lt;/span&gt;
+&lt;span class=”line-number”&gt;7&lt;/span&gt;
+&lt;span class=”line-number”&gt;8&lt;/span&gt;
+&lt;span class=”line-number”&gt;9&lt;/span&gt;
+&lt;span class=”line-number”&gt;10&lt;/span&gt;
+&lt;span class=”line-number”&gt;11&lt;/span&gt;
+&lt;span class=”line-number”&gt;12&lt;/span&gt;
+&lt;span class=”line-number”&gt;13&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=”code”&gt;&lt;pre&gt;&lt;code class=”“&gt;&lt;span class=”line”&gt;&lt;span class=”k”&gt;function&lt;/span&gt; &lt;span class=”n”&gt;List-Mail&lt;/span&gt; &lt;span class=”p”&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nv”&gt;$GmailFeed&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”s2”&gt;”https://mail.google.com/mail/feed/atom”&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nv”&gt;$SecurePassword&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nb”&gt;ConvertTo-SecureString&lt;/span&gt; &lt;span class=”s2”&gt;”password123”&lt;/span&gt; &lt;span class=”n”&gt;-AsPlainText&lt;/span&gt; &lt;span class=”n”&gt;-Force&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nv”&gt;$Credential&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nb”&gt;New-Object&lt;/span&gt; &lt;span class=”n”&gt;System&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;Management&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;Automation&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;PSCredential&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s2”&gt;”billy@gmail.com”&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt; &lt;span class=”nv”&gt;$SecurePassword&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nb”&gt;Invoke-RestMethod&lt;/span&gt; &lt;span class=”n”&gt;-Uri&lt;/span&gt; &lt;span class=”nv”&gt;$GmailFeed&lt;/span&gt; &lt;span class=”n”&gt;-Credential&lt;/span&gt; &lt;span class=”nv”&gt;$Credential&lt;/span&gt; &lt;span class=”p”&gt;|&lt;/span&gt; &lt;span class=”p”&gt;%&lt;/span&gt; &lt;span class=”p”&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;        &lt;span class=”no”&gt;[PSCustomObject]&lt;/span&gt; &lt;span class=”err”&gt;@&lt;/span&gt;&lt;span class=”p”&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”n”&gt;Time&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nb”&gt;Get-Date&lt;/span&gt; &lt;span class=”n”&gt;-Date&lt;/span&gt; &lt;span class=”nv”&gt;$_&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;issued&lt;/span&gt; &lt;span class=”n”&gt;-Format&lt;/span&gt; &lt;span class=”s2”&gt;”ddd <span class="caps">HH</span>:mm”&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”n”&gt;From&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nv”&gt;$_&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;author&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;name&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”n”&gt;Title&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nv”&gt;$_&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;title&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;        &lt;span class=”p”&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”p”&gt;}&lt;/span&gt; &lt;span class=”p”&gt;|&lt;/span&gt; &lt;span class=”nb”&gt;Format-Table&lt;/span&gt; &lt;span class=”n”&gt;-AutoSize&lt;/span&gt;
+&lt;/span&gt;&lt;span class=”line”&gt;&lt;span class=”p”&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt; &lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;This produces the following output at the PowerShell console:&lt;/p&gt;
+&lt;pre class=”example”&gt;
+Time      From Title
+—-      —- —–
+Mon 09:59 David Sarah keeps making faces at me
+Mon 09:45 Sarah David smells
+&lt;/pre&gt;
+&lt;p&gt;This lets me see if my mail is worth opening in the browser without distracting me too much. Since starting to use PowerShell I’ve been maintaining a &lt;code&gt;$Profile&lt;/code&gt; file and adding useful functions such as this to it regularly.&lt;/p&gt;
+&lt;h1&gt;Improvements in my day to day work&lt;/h1&gt;
+&lt;p&gt;Since reading the Finke book, I’ve used PowerShell myself in the following ways:&lt;/p&gt;
+&lt;h2&gt;Firewall debugging&lt;/h2&gt;
+&lt;p&gt;Helping a client to trace where our application was being intermittently blocked by their firewall with a small PowerShell script that repeatedly created a &lt;code&gt;System.Net.Sockets.TcpClient&lt;/code&gt; and made a connection to their server, logging the source port of any failures so that they could be traced in the firewall logs.&lt;/p&gt;
+&lt;p&gt;I wrote this script while on a conference call with the client (they were waiting to get authorisation for &lt;code&gt;tcpdump&lt;/code&gt;), and didn’t even know I could get the source port from the &lt;code&gt;TcpClient&lt;/code&gt; until I explored the &lt;span class=”caps”&gt;<span class="caps">API</span>&lt;/span&gt; using PowerShell.&lt;/p&gt;
+&lt;h2&gt;Ad-hoc application monitoring&lt;/h2&gt;
+&lt;p&gt;Ad-hoc monitoring of an application deployment that ran regularly as a scheduled task, queried a &lt;span class=”caps”&gt;<span class="caps">DB</span>&lt;/span&gt;, wrote the results to &lt;span class=”caps”&gt;<span class="caps">CSV</span>&lt;/span&gt;, and emailed them as an attachment to a group. This was used to provide stats every half hour following an application deployment. I was so confident that I’d be able to put this together in PowerShell that I only scheduled an hour, and it proved to be enough time.&lt;/p&gt;
+&lt;h2&gt;Temporary scheduled export process&lt;/h2&gt;
+&lt;p&gt;I needed to add some functionality to a legacy Windows service application for an ad-hoc export process that would run daily for just under three weeks and felt that writing a temporary Powershell script would be simpler than the significant changes to the service that were required.&lt;/p&gt;
+&lt;p&gt;The script included querying a database, writing the results to a &lt;span class=”caps”&gt;<span class="caps">CSV</span>&lt;/span&gt; file, uploading it to an &lt;span class=”caps”&gt;<span class="caps">FTP</span>&lt;/span&gt; server, and finally emailing the result of the operation. My solution ran perfectly for the three week period.&lt;/p&gt;
+&lt;p&gt;As you can see, everything in the three examples above involves typical interactions such as querying a database or other server and then writing the results to a file (and possibly emailing that). PowerShell made this easier to implement than using a C# console application or Windows service as it has cmdlets to natively handle these operations, and can use .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; for everything else.&lt;/p&gt;
+&lt;h1&gt;Open up Windows PowerShell &lt;span class=”caps”&gt;<span class="caps">ISE</span>&lt;/span&gt; and give it a try&lt;/h1&gt;
+&lt;p&gt;PowerShell comes installed with every modern version of Windows, but Microsoft
+  don’t seem to have marketed it enough. If I hadn’t bought the Finke book on a
+  whim I would have missed out on a really decent scripting tool. Nobody I speak
+  to knows about the Windows PowerShell &lt;span class=”caps”&gt;<span class="caps">ISE</span>&lt;/span&gt; (Integrated Scripting Environment) that
+  comes with PowerShell and really makes it easy to debug and pick up.&lt;/p&gt;
+&lt;p&gt;If you are a .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; developer, open up the Windows PowerShell &lt;span class=”caps”&gt;<span class="caps">ISE</span>&lt;/span&gt; application that
+  is almost certainly installed on your machine, look through the cmdlets, and
+  check out what is available. I think you’ll be pleasantly surprised.&lt;/p&gt;</content><summary type="html">Since reading Windows PowerShell for Developers, I’ve been seriously impressed by PowerShell!</summary></entry><entry><id>tag:martinowen.net,2011-05-14:/blog/2011/05/14/func-unit-and-sauce-labs.html</id><title type="html">How to use FuncUnit with Sauce Labs</title>
 <published>2011-05-<span class="caps">13T23</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2011/05/14/func-unit-and-sauce-labs.html">
 <content type="html">&lt;h3&gt;Functional web application testing with FuncUnit&lt;/h3&gt;
 &lt;p&gt;We’ve recently started using the &lt;a href=”http://funcunit.com/”&gt;FuncUnit&lt;/a&gt; automated web application testing framework where I work. It is built on top of &lt;a href=”http://seleniumhq.org/”&gt;Selenium&lt;/a&gt;, but adds a lot of value as it uses jQuery’s selector syntax, which is much easier to work with than Selenium’s XPath selectors.&lt;/p&gt;
@@ -281,29 +354,16 @@
   font-weight: bold
 &lt;/pre&gt;
 &lt;p&gt;Which to me reads as “if bold is false, set the font-weight to bold” when in fact it means the opposite. A more standard variable prefix like “$” would have seemed more natural.&lt;/p&gt;
-&lt;p&gt;But that’s just me nit-picking. I love the project after all. If you’re a programmer who hates &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt;, you really should give &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt; and Compass a try.&lt;/p&gt;</content><summary type="html">How the Compass <span class="caps">CSS</span> &amp;ldquo;Meta-Framework&amp;rdquo; has taken the pain out of my stylesheets. Something for which I am eternally grateful.</summary></entry><entry><id>tag:martinowen.net,2009-10-19:/blog/2009/10/19/blogging-with-webby.html</id><title type="html">Blogging with Webby</title>
-<published>2009-10-<span class="caps">18T23</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2009/10/19/blogging-with-webby.html">
-<content type="html">&lt;h3&gt;Blogger’s Block&lt;/h3&gt;
-&lt;p&gt;I very rarely blog. I’ve posted a total of three times in the past eighteen months. Even when I have things to blog about, and I even start a post, other things get in the way and the posts get left on the shelf. I’ve decided that this is due to two things:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;I don’t feel like anyone will want to read a post unless I’ve spent hours crafting it, and…&lt;/li&gt;
-	&lt;li&gt;
-&lt;em&gt;Editing posts in Wordpress is a chore&lt;/em&gt;.&lt;/li&gt;
-&lt;/ol&gt;&lt;p&gt;There’s no easy solution to the first problem, but I think I’ve found one for the second. Browser-based text-editing is a problem as old as the web, and Wordpress comes with one of the best JavaScript &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">WYSIWYG</span>&lt;/span&gt;&lt;/span&gt; editors, &lt;a href=”http://tinymce.moxiecode.com/”&gt;Tiny&lt;span class=”caps”&gt;<span class="caps">MCE</span>&lt;/span&gt;&lt;/a&gt;. Tiny is as good a browser-based editor as I’ve seen, but I’ve still never been able to get it to work without resorting to editing the &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HTML</span>&lt;/span&gt;&lt;/span&gt; manually. That ruins my flow, and in the end the post doesn’t get written because I’ve spent as much time moving text and tags around as I have putting words down.&lt;/p&gt;
-&lt;p&gt;When &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">WYSIWYG</span>&lt;/span&gt;&lt;/span&gt; fails, I resort to Textile…&lt;/p&gt;
-&lt;h3&gt;Textile&lt;/h3&gt;
-&lt;p&gt;I &lt;em&gt;love&lt;/em&gt; &lt;a href=”http://textism.com/tools/textile/”&gt;Textile&lt;/a&gt;, and always have. I think non-techincal users should give it (or a similar markup generator such as &lt;a href=”http://daringfireball.net/projects/markdown/”&gt;Markdown&lt;/a&gt;) a go. This blog post (allbeit on a website for a Ruby Textile library) agrees with me: &lt;a href=”http://redcloth.org/articles/wysi-dangerous-why-wysiwyg-editors-are-bad-for-your-website/”&gt;&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">WYSI</span>&lt;/span&gt;&lt;/span&gt;-Dangerous – Why &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">WYSIWYG</span>&lt;/span&gt;&lt;/span&gt; editors are bad for your website&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;When I see someone struggling with Word I know their life would be so much easier if they just spent an hour (if that) learning Textile and used it for formatting their documents. In the past I have written Ruby code to generate &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HTML</span>&lt;/span&gt;&lt;/span&gt; documentation from a Textile source in order to avoid using Word. The documentation was much the better for it. (I plan to upload this to GitHub some day, under the name “Word Must Die.”)&lt;/p&gt;
-&lt;h3&gt;Webby&lt;/h3&gt;
-&lt;p&gt;And so I discovered Webby. This isn’t the first static site generator written in Ruby that I’ve played with (&lt;a href=”http://staticmatic.rubyforge.org/”&gt;StaticMatic&lt;/a&gt; and &lt;a href=”http://jekyllrb.com/”&gt;Jekyll&lt;/a&gt; being the others) but it is the one I’ve got along with most easily. &lt;em&gt;I was very close to going with Jekyll, but I didn’t like the lack of support for &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HAML</span>&lt;/span&gt;&lt;/span&gt; and didn’t want to use a fork.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I’m also using &lt;a href=”http://ultraviolet.rubyforge.org/”&gt;Ultraviolet&lt;/a&gt; with for syntax highlighting, which uses Textmate bundles to support every language I could ever imagine blogging about.&lt;/p&gt;
-&lt;p&gt;My setup isn’t perfect yet, but with help from existing Webby users (notably &lt;a href=”http://aaronqian.com/”&gt;Aaron Qian&lt;/a&gt;) and &lt;a href=”http://disqus.com/”&gt;Disqus&lt;/a&gt; for comments, I’m hoping to have something which rivals my old Wordpress install.&lt;/p&gt;</content><summary type="html">My experiences of blogging with the Webby static site generator, and not looking back.</summary></entry></feed>
+&lt;p&gt;But that’s just me nit-picking. I love the project after all. If you’re a programmer who hates &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt;, you really should give &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt; and Compass a try.&lt;/p&gt;</content><summary type="html">How the Compass <span class="caps">CSS</span> &amp;ldquo;Meta-Framework&amp;rdquo; has taken the pain out of my stylesheets. Something for which I am eternally grateful.</summary></entry></feed>
           </section>
         
       </section>
       <footer>
         <nav class='tags'>
   <ul>
+    <li>
+      <a class='tag' href='/tags/.net/'>.net&nbsp;(1)</a>
+    </li>
     <li>
       <a class='tag' href='/tags/arduino/'>arduino&nbsp;(1)</a>
     </li>
@@ -327,6 +387,9 @@
     </li>
     <li>
       <a class='tag' href='/tags/liverpool/'>liverpool&nbsp;(4)</a>
+    </li>
+    <li>
+      <a class='tag' href='/tags/powershell/'>powershell&nbsp;(1)</a>
     </li>
     <li>
       <a class='tag' href='/tags/slides/'>slides&nbsp;(2)</a>
