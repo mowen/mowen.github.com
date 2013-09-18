@@ -1,427 +1,317 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>martinowen.net</title>
-    <meta name="keywords" content=", ">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/animate.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata">
-    <script src="/js/vendor/modernizr-2.6.1.min.js"></script>
-    <script type="text/javascript" src="//use.typekit.net/gdm4xcy.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-    <![endif]-->
-
-    
-  
-    <div id="container">
-      <section id="sidebar">
-        <header>
-  <a href='/'>
-    <img id='avatar' src='/assets/images/avatar_med.png' title='Martin Owen'>
-  </a>
-</header>
-<nav class='main'>
-  <ul>
-    <li><a href='/about.html'>about</a></li>
-    <li><a href='/archives.html'>archives</a></li>
-    <li>
-      <a href='/atom.xml'>
-        subscribe
-      </a>
-    </li>
-  </ul>
-</nav>
-<nav class='elsewhere'>
-  <ul class='social-network-links'>
-    <li>
-      <a class='github' href='http://github.com/mowen'>
-        github
-      </a>
-    </li>
-    <li>
-      <a class='lastfm' href='http://last.fm/user/martyziff'>
-        last.fm
-      </a>
-    </li>
-    <li>
-      <a class='twitter' href='http://twitter.com/martinowen'>
-        twitter
-      </a>
-    </li>
-    <li>
-      <a class='facebook' href='http://facebook.com/martowen'>
-        facebook
-      </a>
-    </li>
-    <li>
-      <a class='delicious' href='http://delicious.com/mintyboy'>
-        delicious
-      </a>
-    </li>
-    <li>
-      <a class='linkedin' href='http://uk.linkedin.com/in/martinowenuk'>
-        linkedin
-      </a>
-    </li>
-  </ul>
-</nav>
-
-      </section>
-      <section id="main" role="main">
-        
-          <section >
-            <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><id>http://martinowen.net/</id><title>martinowen.net</title>
-<updated>2013-08-<span class="caps">29T23</span>:00:<span class="caps">00Z</span></updated><link rel="alternate" href="http://martinowen.net/">
-<link rel="self" href="http://martinowen.net/atom.xml">
-<author><name>Martin Owen</name><uri>http://martinowen.net</uri></author><entry><id>tag:martinowen.net,2013-08-30:/blog/2013/08/30/better-windows-development-with-powershell.html</id><title type="html">Better Windows development with PowerShell</title>
-<published>2013-08-<span class="caps">29T23</span>:00:<span class="caps">00Z</span></published><updated>2013-09-<span class="caps">17T21</span>:56:<span class="caps">52Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2013/08/30/better-windows-development-with-powershell.html">
-<content type="html">&lt;h1&gt;Overcoming my PowerShell cynicism&lt;/h1&gt;
-&lt;p&gt;I’ve always loved Unix shells for their simplicity and power. I was sure that PowerShell was nothing in comparison, just an iteration of Windows batch files or VBScript (two of the most unfriendly scripting environments I’ve ever come across). My opinion changed recently when I read the excellent book &lt;a href=”http://shop.oreilly.com/product/0636920024491.do”&gt;Windows PowerShell for Developers&lt;/a&gt; by Douglas Finke.&lt;/p&gt;
-&lt;p&gt;If you are a .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; developer I highly recommend Finke’s book. He gives a really good introduction to PowerShell and also highlights how PowerShell’s integration with the .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; framework can enable you to explore APIs at the console.&lt;/p&gt;
-&lt;p&gt;He covers things like:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://martinowen.net/</id>
+  <title>martinowen.net</title>
+  <updated>2013-08-29T23:00:00Z</updated>
+  <link rel="alternate" href="http://martinowen.net/"/>
+  <link rel="self" href="http://martinowen.net/atom.xml"/>
+  <author>
+    <name>Martin Owen</name>
+    <uri>http://martinowen.net</uri>
+  </author>
+  <entry>
+    <id>tag:martinowen.net,2013-08-30:/blog/2013/08/30/better-windows-development-with-powershell.html</id>
+    <title type="html">Better Windows development with PowerShell</title>
+    <published>2013-08-29T23:00:00Z</published>
+    <updated>2013-09-17T21:56:52Z</updated>
+    <link rel="alternate" href="http://martinowen.net/blog/2013/08/30/better-windows-development-with-powershell.html"/>
+    <content type="html">&lt;h1&gt;Overcoming my PowerShell cynicism&lt;/h1&gt;
+&lt;p&gt;I’ve always loved Unix shells for their simplicity and power. I was sure that PowerShell was nothing in comparison, just an iteration of Windows batch files or VBScript (two of the most unfriendly scripting environments I’ve ever come across). My opinion changed recently when I read the excellent book &lt;a href="http://shop.oreilly.com/product/0636920024491.do"&gt;Windows PowerShell for Developers&lt;/a&gt; by Douglas Finke.&lt;/p&gt;
+&lt;p&gt;If you are a .&lt;span class="caps"&gt;NET&lt;/span&gt; developer I highly recommend Finke’s book. He gives a really good introduction to PowerShell and also highlights how PowerShell’s integration with the .&lt;span class="caps"&gt;NET&lt;/span&gt; framework can enable you to explore APIs at the console.&lt;/p&gt;
+&lt;p&gt;He covers things like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Embedding PowerShell into .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; applications&lt;/li&gt;
-  &lt;li&gt;Querying &lt;span class=”caps”&gt;<span class="caps">XML</span>&lt;/span&gt; and Json web services (using both &lt;code&gt;System.Net.WebClient&lt;/code&gt; and the new &lt;code&gt;Invoke-RestMethod&lt;/code&gt; cmdlet introduced in PowerShell &lt;span class=”caps”&gt;<span class="caps">3.0</span>&lt;/span&gt;)&lt;/li&gt;
-  &lt;li&gt;Building GUIs with the &lt;a href=”http://showui.codeplex.com/”&gt;Show&lt;span class=”caps”&gt;<span class="caps">UI</span>&lt;/span&gt;&lt;/a&gt; PowerShell module&lt;/li&gt;
-  &lt;li&gt;Using Roslyn to query the code in a .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; &lt;span class=”caps”&gt;<span class="caps">DLL</span>&lt;/span&gt; and extract syntax trees from it&lt;/li&gt;
-  &lt;li&gt;Writing a &lt;span class=”caps”&gt;<span class="caps">DSL</span>&lt;/span&gt; (he creates a &lt;span class=”caps”&gt;<span class="caps">DSL</span>&lt;/span&gt; to generate GraphViz digraphs)&lt;/li&gt;
-  &lt;li&gt;Automating &lt;span class=”caps”&gt;<span class="caps">COM</span>&lt;/span&gt; applications such as Excel and Internet Explorer&lt;/li&gt;
-&lt;/ul&gt;&lt;h1&gt;PowerShell = ObjectShell&lt;/h1&gt;
-&lt;p&gt;What really blew me away about PowerShell is the pipeline. Unix piping always felt really elegant, but PowerShell improves on it by piping objects rather than streams. This is why I think Microsoft chose the wrong name - I think ObjectShell would have been more appropriate.&lt;/p&gt;
-&lt;p&gt;Add to the object piping great &lt;span class=”caps”&gt;<span class="caps">CSV</span>&lt;/span&gt;, &lt;span class=”caps”&gt;<span class="caps">XML</span>&lt;/span&gt; (and in PowerShell &lt;span class=”caps”&gt;<span class="caps">3.0</span>&lt;/span&gt; Json) importing and exporting commands, plus the ability to invoke &lt;span class=”caps”&gt;<span class="caps">REST</span>&lt;/span&gt; methods natively, and you’ve got a very nice glue language indeed.&lt;/p&gt;
-&lt;p&gt;The example below shows how the &lt;code&gt;Invoke-RestMethod&lt;/code&gt; cmdlet can pipe an &lt;span class=”caps”&gt;<span class="caps">XML</span>&lt;/span&gt; atom feed to a block that will be run foreach &lt;span class=”caps”&gt;<span class="caps">XML</span>&lt;/span&gt; node.  It allows me to get a very simple command line view of the new messages in my GMail inbox:&lt;/p&gt;
-&lt;div class=”highlight”&gt;&lt;table&gt;&lt;tr&gt;
-&lt;td class=”gutter”&gt;&lt;pre class=”line-numbers”&gt;&lt;span class=”line-number”&gt;1&lt;/span&gt;
-&lt;span class=”line-number”&gt;2&lt;/span&gt;
-&lt;span class=”line-number”&gt;3&lt;/span&gt;
-&lt;span class=”line-number”&gt;4&lt;/span&gt;
-&lt;span class=”line-number”&gt;5&lt;/span&gt;
-&lt;span class=”line-number”&gt;6&lt;/span&gt;
-&lt;span class=”line-number”&gt;7&lt;/span&gt;
-&lt;span class=”line-number”&gt;8&lt;/span&gt;
-&lt;span class=”line-number”&gt;9&lt;/span&gt;
-&lt;span class=”line-number”&gt;10&lt;/span&gt;
-&lt;span class=”line-number”&gt;11&lt;/span&gt;
-&lt;span class=”line-number”&gt;12&lt;/span&gt;
-&lt;span class=”line-number”&gt;13&lt;/span&gt;
+&lt;li&gt;Embedding PowerShell into .&lt;span class="caps"&gt;NET&lt;/span&gt; applications&lt;/li&gt;
+  &lt;li&gt;Querying &lt;span class="caps"&gt;XML&lt;/span&gt; and Json web services (using both &lt;code&gt;System.Net.WebClient&lt;/code&gt; and the new &lt;code&gt;Invoke-RestMethod&lt;/code&gt; cmdlet introduced in PowerShell &lt;span class="caps"&gt;3.0&lt;/span&gt;)&lt;/li&gt;
+  &lt;li&gt;Building GUIs with the &lt;a href="http://showui.codeplex.com/"&gt;Show&lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/a&gt; PowerShell module&lt;/li&gt;
+  &lt;li&gt;Using Roslyn to query the code in a .&lt;span class="caps"&gt;NET&lt;/span&gt; &lt;span class="caps"&gt;DLL&lt;/span&gt; and extract syntax trees from it&lt;/li&gt;
+  &lt;li&gt;Writing a &lt;span class="caps"&gt;DSL&lt;/span&gt; (he creates a &lt;span class="caps"&gt;DSL&lt;/span&gt; to generate GraphViz digraphs)&lt;/li&gt;
+  &lt;li&gt;Automating &lt;span class="caps"&gt;COM&lt;/span&gt; applications such as Excel and Internet Explorer&lt;/li&gt;
+&lt;/ul&gt;&lt;h1&gt;PowerShell = ObjectShell&lt;/h1&gt;
+&lt;p&gt;What really blew me away about PowerShell is the pipeline. Unix piping always felt really elegant, but PowerShell improves on it by piping objects rather than streams. This is why I think Microsoft chose the wrong name - I think ObjectShell would have been more appropriate.&lt;/p&gt;
+&lt;p&gt;Add to the object piping great &lt;span class="caps"&gt;CSV&lt;/span&gt;, &lt;span class="caps"&gt;XML&lt;/span&gt; (and in PowerShell &lt;span class="caps"&gt;3.0&lt;/span&gt; Json) importing and exporting commands, plus the ability to invoke &lt;span class="caps"&gt;REST&lt;/span&gt; methods natively, and you’ve got a very nice glue language indeed.&lt;/p&gt;
+&lt;p&gt;The example below shows how the &lt;code&gt;Invoke-RestMethod&lt;/code&gt; cmdlet can pipe an &lt;span class="caps"&gt;XML&lt;/span&gt; atom feed to a block that will be run foreach &lt;span class="caps"&gt;XML&lt;/span&gt; node.  It allows me to get a very simple command line view of the new messages in my GMail inbox:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;
+&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;&lt;span class="line-number"&gt;1&lt;/span&gt;
+&lt;span class="line-number"&gt;2&lt;/span&gt;
+&lt;span class="line-number"&gt;3&lt;/span&gt;
+&lt;span class="line-number"&gt;4&lt;/span&gt;
+&lt;span class="line-number"&gt;5&lt;/span&gt;
+&lt;span class="line-number"&gt;6&lt;/span&gt;
+&lt;span class="line-number"&gt;7&lt;/span&gt;
+&lt;span class="line-number"&gt;8&lt;/span&gt;
+&lt;span class="line-number"&gt;9&lt;/span&gt;
+&lt;span class="line-number"&gt;10&lt;/span&gt;
+&lt;span class="line-number"&gt;11&lt;/span&gt;
+&lt;span class="line-number"&gt;12&lt;/span&gt;
+&lt;span class="line-number"&gt;13&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;
-&lt;td class=”code”&gt;&lt;pre&gt;&lt;code class=”“&gt;&lt;span class=”line”&gt;&lt;span class=”k”&gt;function&lt;/span&gt; &lt;span class=”n”&gt;List-Mail&lt;/span&gt; &lt;span class=”p”&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nv”&gt;$GmailFeed&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”s2”&gt;”https://mail.google.com/mail/feed/atom”&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nv”&gt;$SecurePassword&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nb”&gt;ConvertTo-SecureString&lt;/span&gt; &lt;span class=”s2”&gt;”password123”&lt;/span&gt; &lt;span class=”n”&gt;-AsPlainText&lt;/span&gt; &lt;span class=”n”&gt;-Force&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nv”&gt;$Credential&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nb”&gt;New-Object&lt;/span&gt; &lt;span class=”n”&gt;System&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;Management&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;Automation&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;PSCredential&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s2”&gt;”billy@gmail.com”&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt; &lt;span class=”nv”&gt;$SecurePassword&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nb”&gt;Invoke-RestMethod&lt;/span&gt; &lt;span class=”n”&gt;-Uri&lt;/span&gt; &lt;span class=”nv”&gt;$GmailFeed&lt;/span&gt; &lt;span class=”n”&gt;-Credential&lt;/span&gt; &lt;span class=”nv”&gt;$Credential&lt;/span&gt; &lt;span class=”p”&gt;|&lt;/span&gt; &lt;span class=”p”&gt;%&lt;/span&gt; &lt;span class=”p”&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;        &lt;span class=”no”&gt;[PSCustomObject]&lt;/span&gt; &lt;span class=”err”&gt;@&lt;/span&gt;&lt;span class=”p”&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”n”&gt;Time&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nb”&gt;Get-Date&lt;/span&gt; &lt;span class=”n”&gt;-Date&lt;/span&gt; &lt;span class=”nv”&gt;$_&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;issued&lt;/span&gt; &lt;span class=”n”&gt;-Format&lt;/span&gt; &lt;span class=”s2”&gt;”ddd <span class="caps">HH</span>:mm”&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”n”&gt;From&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nv”&gt;$_&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;author&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;name&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”n”&gt;Title&lt;/span&gt; &lt;span class=”p”&gt;=&lt;/span&gt; &lt;span class=”nv”&gt;$_&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”n”&gt;title&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;        &lt;span class=”p”&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”p”&gt;}&lt;/span&gt; &lt;span class=”p”&gt;|&lt;/span&gt; &lt;span class=”nb”&gt;Format-Table&lt;/span&gt; &lt;span class=”n”&gt;-AutoSize&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;&lt;span class=”p”&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt; &lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
-&lt;p&gt;This produces the following output at the PowerShell console:&lt;/p&gt;
-&lt;pre class=”example”&gt;
-Time      From Title
-—-      —- —–
-Mon 09:59 David Sarah keeps making faces at me
-Mon 09:45 Sarah David smells
+&lt;td class="code"&gt;&lt;pre&gt;&lt;code class=""&gt;&lt;span class="line"&gt;&lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="n"&gt;List-Mail&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="nv"&gt;$GmailFeed&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"https://mail.google.com/mail/feed/atom"&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="nv"&gt;$SecurePassword&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;ConvertTo-SecureString&lt;/span&gt; &lt;span class="s2"&gt;"password123"&lt;/span&gt; &lt;span class="n"&gt;-AsPlainText&lt;/span&gt; &lt;span class="n"&gt;-Force&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="nv"&gt;$Credential&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;New-Object&lt;/span&gt; &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Management&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Automation&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PSCredential&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"billy@gmail.com"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;$SecurePassword&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="nb"&gt;Invoke-RestMethod&lt;/span&gt; &lt;span class="n"&gt;-Uri&lt;/span&gt; &lt;span class="nv"&gt;$GmailFeed&lt;/span&gt; &lt;span class="n"&gt;-Credential&lt;/span&gt; &lt;span class="nv"&gt;$Credential&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="p"&gt;%&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;        &lt;span class="no"&gt;[PSCustomObject]&lt;/span&gt; &lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="n"&gt;Time&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;Get-Date&lt;/span&gt; &lt;span class="n"&gt;-Date&lt;/span&gt; &lt;span class="nv"&gt;$_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;issued&lt;/span&gt; &lt;span class="n"&gt;-Format&lt;/span&gt; &lt;span class="s2"&gt;"ddd HH:mm"&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="n"&gt;From&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nv"&gt;$_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="n"&gt;Title&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nv"&gt;$_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;        &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;Format-Table&lt;/span&gt; &lt;span class="n"&gt;-AutoSize&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;This produces the following output at the PowerShell console:&lt;/p&gt;
+&lt;pre class="example"&gt;
+Time      From  Title
+----      ----  -----
+Mon 09:59 David Sarah keeps making faces at me
+Mon 09:45 Sarah David smells
 &lt;/pre&gt;
-&lt;p&gt;This lets me see if my mail is worth opening in the browser without distracting me too much. Since starting to use PowerShell I’ve been maintaining a &lt;code&gt;$Profile&lt;/code&gt; file and adding useful functions such as this to it regularly.&lt;/p&gt;
-&lt;h1&gt;Improvements in my day to day work&lt;/h1&gt;
-&lt;p&gt;Since reading the Finke book, I’ve used PowerShell myself in the following ways:&lt;/p&gt;
+&lt;p&gt;This lets me see if my mail is worth opening in the browser without distracting me too much. Since starting to use PowerShell I’ve been maintaining a &lt;code&gt;$Profile&lt;/code&gt; file and adding useful functions such as this to it regularly.&lt;/p&gt;
+&lt;h1&gt;Improvements in my day to day work&lt;/h1&gt;
+&lt;p&gt;Since reading the Finke book, I’ve used PowerShell myself in the following ways:&lt;/p&gt;
 &lt;h2&gt;Firewall debugging&lt;/h2&gt;
-&lt;p&gt;Helping a client to trace where our application was being intermittently blocked by their firewall with a small PowerShell script that repeatedly created a &lt;code&gt;System.Net.Sockets.TcpClient&lt;/code&gt; and made a connection to their server, logging the source port of any failures so that they could be traced in the firewall logs.&lt;/p&gt;
-&lt;p&gt;I wrote this script while on a conference call with the client (they were waiting to get authorisation for &lt;code&gt;tcpdump&lt;/code&gt;), and didn’t even know I could get the source port from the &lt;code&gt;TcpClient&lt;/code&gt; until I explored the &lt;span class=”caps”&gt;<span class="caps">API</span>&lt;/span&gt; using PowerShell.&lt;/p&gt;
-&lt;h2&gt;Ad-hoc application monitoring&lt;/h2&gt;
-&lt;p&gt;Ad-hoc monitoring of an application deployment that ran regularly as a scheduled task, queried a &lt;span class=”caps”&gt;<span class="caps">DB</span>&lt;/span&gt;, wrote the results to &lt;span class=”caps”&gt;<span class="caps">CSV</span>&lt;/span&gt;, and emailed them as an attachment to a group. This was used to provide stats every half hour following an application deployment. I was so confident that I’d be able to put this together in PowerShell that I only scheduled an hour, and it proved to be enough time.&lt;/p&gt;
-&lt;h2&gt;Temporary scheduled export process&lt;/h2&gt;
-&lt;p&gt;I needed to add some functionality to a legacy Windows service application for an ad-hoc export process that would run daily for just under three weeks and felt that writing a temporary Powershell script would be simpler than the significant changes to the service that were required.&lt;/p&gt;
-&lt;p&gt;The script included querying a database, writing the results to a &lt;span class=”caps”&gt;<span class="caps">CSV</span>&lt;/span&gt; file, uploading it to an &lt;span class=”caps”&gt;<span class="caps">FTP</span>&lt;/span&gt; server, and finally emailing the result of the operation. My solution ran perfectly for the three week period.&lt;/p&gt;
-&lt;p&gt;As you can see, everything in the three examples above involves typical interactions such as querying a database or other server and then writing the results to a file (and possibly emailing that). PowerShell made this easier to implement than using a C# console application or Windows service as it has cmdlets to natively handle these operations, and can use .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; for everything else.&lt;/p&gt;
-&lt;h1&gt;Open up Windows PowerShell &lt;span class=”caps”&gt;<span class="caps">ISE</span>&lt;/span&gt; and give it a try&lt;/h1&gt;
-&lt;p&gt;PowerShell comes installed with every modern version of Windows, but Microsoft
-  don’t seem to have marketed it enough. If I hadn’t bought the Finke book on a
-  whim I would have missed out on a really decent scripting tool. Nobody I speak
-  to knows about the Windows PowerShell &lt;span class=”caps”&gt;<span class="caps">ISE</span>&lt;/span&gt; (Integrated Scripting Environment) that
-  comes with PowerShell and really makes it easy to debug and pick up.&lt;/p&gt;
-&lt;p&gt;If you are a .&lt;span class=”caps”&gt;<span class="caps">NET</span>&lt;/span&gt; developer, open up the Windows PowerShell &lt;span class=”caps”&gt;<span class="caps">ISE</span>&lt;/span&gt; application that
-  is almost certainly installed on your machine, look through the cmdlets, and
-  check out what is available. I think you’ll be pleasantly surprised.&lt;/p&gt;</content><summary type="html">Since reading Windows PowerShell for Developers, I’ve been seriously impressed by PowerShell!</summary></entry><entry><id>tag:martinowen.net,2011-05-14:/blog/2011/05/14/func-unit-and-sauce-labs.html</id><title type="html">How to use FuncUnit with Sauce Labs</title>
-<published>2011-05-<span class="caps">13T23</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2011/05/14/func-unit-and-sauce-labs.html">
-<content type="html">&lt;h3&gt;Functional web application testing with FuncUnit&lt;/h3&gt;
-&lt;p&gt;We’ve recently started using the &lt;a href=”http://funcunit.com/”&gt;FuncUnit&lt;/a&gt; automated web application testing framework where I work. It is built on top of &lt;a href=”http://seleniumhq.org/”&gt;Selenium&lt;/a&gt;, but adds a lot of value as it uses jQuery’s selector syntax, which is much easier to work with than Selenium’s XPath selectors.&lt;/p&gt;
-&lt;p&gt;FuncUnit also provides &lt;a href=”http://javascriptmvc.com/docs/FuncUnit.html#&amp;amp;who=mastering”&gt;many helper functions&lt;/a&gt; for waiting until elements exist on the page. This is invaluable if you are doing a lot of &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">DOM</span>&lt;/span&gt;&lt;/span&gt; manipulation in your application, which we certainly are.&lt;/p&gt;
-&lt;h3&gt;Cross-browser testing with Sauce Labs&lt;/h3&gt;
-&lt;p&gt;Something we wanted to do with our functional testing was run the tests in different browser environments using the cloud-based cross-browser testing service &lt;a href=”http://saucelabs.com/”&gt;Sauce Labs&lt;/a&gt;, as this would save us from having to install older versions of various browsers. I wasn’t sure if this was going to be possible, but with &lt;a href=”http://forum.javascriptmvc.com/#topic/32525000000389015”&gt;some advice from Brian Moschel&lt;/a&gt; I was able to get it working.&lt;/p&gt;
-&lt;h3&gt;How to combine the two&lt;/h3&gt;
-&lt;p&gt;FuncUnit loads its Selenium settings from a file named &lt;code&gt;settings.js&lt;/code&gt; which should be located in the same directory as your FuncUnit test page. In order to use Sauce Labs as your Selenium server when running FuncUnit, you need the following code in your settings.js:&lt;/p&gt;
-&lt;code class=”language-javascript”&gt;&lt;div class=”highlight”&gt;&lt;table&gt;&lt;tr&gt;
-&lt;td class=”gutter”&gt;&lt;pre class=”line-numbers”&gt;&lt;span class=”line-number”&gt;1&lt;/span&gt;
-&lt;span class=”line-number”&gt;2&lt;/span&gt;
-&lt;span class=”line-number”&gt;3&lt;/span&gt;
-&lt;span class=”line-number”&gt;4&lt;/span&gt;
-&lt;span class=”line-number”&gt;5&lt;/span&gt;
-&lt;span class=”line-number”&gt;6&lt;/span&gt;
-&lt;span class=”line-number”&gt;7&lt;/span&gt;
-&lt;span class=”line-number”&gt;8&lt;/span&gt;
-&lt;span class=”line-number”&gt;9&lt;/span&gt;
-&lt;span class=”line-number”&gt;10&lt;/span&gt;
-&lt;span class=”line-number”&gt;11&lt;/span&gt;
-&lt;span class=”line-number”&gt;12&lt;/span&gt;
-&lt;span class=”line-number”&gt;13&lt;/span&gt;
-&lt;span class=”line-number”&gt;14&lt;/span&gt;
-&lt;span class=”line-number”&gt;15&lt;/span&gt;
-&lt;span class=”line-number”&gt;16&lt;/span&gt;
-&lt;span class=”line-number”&gt;17&lt;/span&gt;
-&lt;span class=”line-number”&gt;18&lt;/span&gt;
+&lt;p&gt;Helping a client to trace where our application was being intermittently blocked by their firewall with a small PowerShell script that repeatedly created a &lt;code&gt;System.Net.Sockets.TcpClient&lt;/code&gt; and made a connection to their server, logging the source port of any failures so that they could be traced in the firewall logs.&lt;/p&gt;
+&lt;p&gt;I wrote this script while on a conference call with the client (they were waiting to get authorisation for &lt;code&gt;tcpdump&lt;/code&gt;), and didn’t even know I could get the source port from the &lt;code&gt;TcpClient&lt;/code&gt; until I explored the &lt;span class="caps"&gt;API&lt;/span&gt; using PowerShell.&lt;/p&gt;
+&lt;h2&gt;Ad-hoc application monitoring&lt;/h2&gt;
+&lt;p&gt;Ad-hoc monitoring of an application deployment that ran regularly as a scheduled task, queried a &lt;span class="caps"&gt;DB&lt;/span&gt;, wrote the results to &lt;span class="caps"&gt;CSV&lt;/span&gt;, and emailed them as an attachment to a group. This was used to provide stats every half hour following an application deployment. I was so confident that I’d be able to put this together in PowerShell that I only scheduled an hour, and it proved to be enough time.&lt;/p&gt;
+&lt;h2&gt;Temporary scheduled export process&lt;/h2&gt;
+&lt;p&gt;I needed to add some functionality to a legacy Windows service application for an ad-hoc export process that would run daily for just under three weeks and felt that writing a temporary Powershell script would be simpler than the significant changes to the service that were required.&lt;/p&gt;
+&lt;p&gt;The script included querying a database, writing the results to a &lt;span class="caps"&gt;CSV&lt;/span&gt; file, uploading it to an &lt;span class="caps"&gt;FTP&lt;/span&gt; server, and finally emailing the result of the operation. My solution ran perfectly for the three week period.&lt;/p&gt;
+&lt;p&gt;As you can see, everything in the three examples above involves typical interactions such as querying a database or other server and then writing the results to a file (and possibly emailing that). PowerShell made this easier to implement than using a C# console application or Windows service as it has cmdlets to natively handle these operations, and can use .&lt;span class="caps"&gt;NET&lt;/span&gt; for everything else.&lt;/p&gt;
+&lt;h1&gt;Open up Windows PowerShell &lt;span class="caps"&gt;ISE&lt;/span&gt; and give it a try&lt;/h1&gt;
+&lt;p&gt;PowerShell comes installed with every modern version of Windows, but Microsoft
+  don’t seem to have marketed it enough. If I hadn’t bought the Finke book on a
+  whim I would have missed out on a really decent scripting tool. Nobody I speak
+  to knows about the Windows PowerShell &lt;span class="caps"&gt;ISE&lt;/span&gt; (Integrated Scripting Environment) that
+  comes with PowerShell and really makes it easy to debug and pick up.&lt;/p&gt;
+&lt;p&gt;If you are a .&lt;span class="caps"&gt;NET&lt;/span&gt; developer, open up the Windows PowerShell &lt;span class="caps"&gt;ISE&lt;/span&gt; application that
+  is almost certainly installed on your machine, look through the cmdlets, and
+  check out what is available. I think you’ll be pleasantly surprised.&lt;/p&gt;</content>
+    <summary type="html">Since reading Windows PowerShell for Developers, I've been seriously impressed by PowerShell!</summary>
+  </entry>
+  <entry>
+    <id>tag:martinowen.net,2011-05-14:/blog/2011/05/14/func-unit-and-sauce-labs.html</id>
+    <title type="html">How to use FuncUnit with Sauce Labs</title>
+    <published>2011-05-13T23:00:00Z</published>
+    <updated>2013-04-06T14:26:02Z</updated>
+    <link rel="alternate" href="http://martinowen.net/blog/2011/05/14/func-unit-and-sauce-labs.html"/>
+    <content type="html">&lt;h3&gt;Functional web application testing with FuncUnit&lt;/h3&gt;
+&lt;p&gt;We’ve recently started using the &lt;a href="http://funcunit.com/"&gt;FuncUnit&lt;/a&gt; automated web application testing framework where I work. It is built on top of &lt;a href="http://seleniumhq.org/"&gt;Selenium&lt;/a&gt;, but adds a lot of value as it uses jQuery’s selector syntax, which is much easier to work with than Selenium’s XPath selectors.&lt;/p&gt;
+&lt;p&gt;FuncUnit also provides &lt;a href="http://javascriptmvc.com/docs/FuncUnit.html#&amp;amp;who=mastering"&gt;many helper functions&lt;/a&gt; for waiting until elements exist on the page. This is invaluable if you are doing a lot of &lt;span class="caps"&gt;&lt;span class="caps"&gt;DOM&lt;/span&gt;&lt;/span&gt; manipulation in your application, which we certainly are.&lt;/p&gt;
+&lt;h3&gt;Cross-browser testing with Sauce Labs&lt;/h3&gt;
+&lt;p&gt;Something we wanted to do with our functional testing was run the tests in different browser environments using the cloud-based cross-browser testing service &lt;a href="http://saucelabs.com/"&gt;Sauce Labs&lt;/a&gt;, as this would save us from having to install older versions of various browsers. I wasn’t sure if this was going to be possible, but with &lt;a href="http://forum.javascriptmvc.com/#topic/32525000000389015"&gt;some advice from Brian Moschel&lt;/a&gt; I was able to get it working.&lt;/p&gt;
+&lt;h3&gt;How to combine the two&lt;/h3&gt;
+&lt;p&gt;FuncUnit loads its Selenium settings from a file named &lt;code&gt;settings.js&lt;/code&gt; which should be located in the same directory as your FuncUnit test page. In order to use Sauce Labs as your Selenium server when running FuncUnit, you need the following code in your settings.js:&lt;/p&gt;
+&lt;code class="language-javascript"&gt;&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;
+&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;&lt;span class="line-number"&gt;1&lt;/span&gt;
+&lt;span class="line-number"&gt;2&lt;/span&gt;
+&lt;span class="line-number"&gt;3&lt;/span&gt;
+&lt;span class="line-number"&gt;4&lt;/span&gt;
+&lt;span class="line-number"&gt;5&lt;/span&gt;
+&lt;span class="line-number"&gt;6&lt;/span&gt;
+&lt;span class="line-number"&gt;7&lt;/span&gt;
+&lt;span class="line-number"&gt;8&lt;/span&gt;
+&lt;span class="line-number"&gt;9&lt;/span&gt;
+&lt;span class="line-number"&gt;10&lt;/span&gt;
+&lt;span class="line-number"&gt;11&lt;/span&gt;
+&lt;span class="line-number"&gt;12&lt;/span&gt;
+&lt;span class="line-number"&gt;13&lt;/span&gt;
+&lt;span class="line-number"&gt;14&lt;/span&gt;
+&lt;span class="line-number"&gt;15&lt;/span&gt;
+&lt;span class="line-number"&gt;16&lt;/span&gt;
+&lt;span class="line-number"&gt;17&lt;/span&gt;
+&lt;span class="line-number"&gt;18&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;
-&lt;td class=”code”&gt;&lt;pre&gt;&lt;code class=”javascript”&gt;&lt;span class=”line”&gt;&lt;span class=”nx”&gt;FuncUnit&lt;/span&gt; &lt;span class=”o”&gt;=&lt;/span&gt; &lt;span class=”p”&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nx”&gt;browsers&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”p”&gt;[&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;        &lt;span class=”nx”&gt;<span class="caps">JSON</span>&lt;/span&gt;&lt;span class=”p”&gt;.&lt;/span&gt;&lt;span class=”nx”&gt;stringify&lt;/span&gt;&lt;span class=”p”&gt;({&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”nx”&gt;username&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”s2”&gt;”&amp;lt;your Sauce Labs username&amp;gt;”&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”s2”&gt;”access-key”&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”s2”&gt;”&amp;lt;your Sauce Labs Api Key&amp;gt;”&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”nx”&gt;os&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”s2”&gt;”Windows 2003”&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”nx”&gt;browser&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”s2”&gt;”firefox”&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”s2”&gt;”browser-version”&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”s2”&gt;”<span class="caps">3.6.</span>”&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”nx”&gt;name&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”s2”&gt;”My Tests”&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;            &lt;span class=”s2”&gt;”user-extensions-url”&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”s2”&gt;”http://&amp;lt;your server&amp;gt;/funcunit/java/user-extensions.js”&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;        &lt;span class=”p”&gt;})&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”p”&gt;],&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nx”&gt;serverHost&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”s1”&gt;’ondemand.saucelabs.com’&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nx”&gt;serverPort&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”mi”&gt;80&lt;/span&gt;&lt;span class=”p”&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;    &lt;span class=”nx”&gt;jmvcRoot&lt;/span&gt;&lt;span class=”o”&gt;:&lt;/span&gt; &lt;span class=”s1”&gt;’http://&amp;lt;your server&amp;gt;/’&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;&lt;span class=”p”&gt;};&lt;/span&gt;
+&lt;td class="code"&gt;&lt;pre&gt;&lt;code class="javascript"&gt;&lt;span class="line"&gt;&lt;span class="nx"&gt;FuncUnit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="nx"&gt;browsers&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;        &lt;span class="nx"&gt;JSON&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;stringify&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="nx"&gt;username&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt;your Sauce Labs username&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="s2"&gt;"access-key"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt;your Sauce Labs Api Key&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="nx"&gt;os&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"Windows 2003"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="nx"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"firefox"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="s2"&gt;"browser-version"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"3.6."&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"My Tests"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;            &lt;span class="s2"&gt;"user-extensions-url"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"http://&amp;lt;your server&amp;gt;/funcunit/java/user-extensions.js"&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;        &lt;span class="p"&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="p"&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="nx"&gt;serverHost&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'ondemand.saucelabs.com'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="nx"&gt;serverPort&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;
+&lt;/span&gt;&lt;span class="line"&gt;    &lt;span class="nx"&gt;jmvcRoot&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'http://&amp;lt;your server&amp;gt;/'&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="p"&gt;};&lt;/span&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;p&gt;&lt;em&gt;You will of course have to sign up for a free account with Sauce Labs to obtain a username and access-key, and make your application publicly available.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This uses the Sauce Labs’ &lt;a href=”http://saucelabs.com/docs/sauce-ondemand#json-config”&gt;&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">JSON</span>&lt;/span&gt;&lt;/span&gt; config&lt;/a&gt; as the browser string, and also specifies their server as the server host. The &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">JSON</span>&lt;/span&gt;&lt;/span&gt; config tells Sauce Labs to load a Selenium user-extensions file, which bundles all of the JavaScript code that implements FuncUnit. I had to make this publicly available on my server as there is no way to upload this to Sauce Labs in advance.&lt;/p&gt;
-&lt;p&gt;If you now run the &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HTML</span>&lt;/span&gt;&lt;/span&gt; page that contains your FuncUnit tests like so:&lt;/p&gt;
-&lt;pre&gt;./funcunit/envjs path/to/funcunit.html
+&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;p&gt;&lt;em&gt;You will of course have to sign up for a free account with Sauce Labs to obtain a username and access-key, and make your application publicly available.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This uses the Sauce Labs’ &lt;a href="http://saucelabs.com/docs/sauce-ondemand#json-config"&gt;&lt;span class="caps"&gt;&lt;span class="caps"&gt;JSON&lt;/span&gt;&lt;/span&gt; config&lt;/a&gt; as the browser string, and also specifies their server as the server host. The &lt;span class="caps"&gt;&lt;span class="caps"&gt;JSON&lt;/span&gt;&lt;/span&gt; config tells Sauce Labs to load a Selenium user-extensions file, which bundles all of the JavaScript code that implements FuncUnit. I had to make this publicly available on my server as there is no way to upload this to Sauce Labs in advance.&lt;/p&gt;
+&lt;p&gt;If you now run the &lt;span class="caps"&gt;&lt;span class="caps"&gt;HTML&lt;/span&gt;&lt;/span&gt; page that contains your FuncUnit tests like so:&lt;/p&gt;
+&lt;pre&gt;./funcunit/envjs path/to/funcunit.html
 &lt;/pre&gt;
-&lt;p&gt;The settings in &lt;code&gt;settings.js&lt;/code&gt; will be loaded and the tests will be run on Sauce Labs’ machines, not yours. As long as you open your pages in your tests using &lt;code&gt;S.open(‘//index.html’)&lt;/code&gt; the jmvcRoot will be applied and you will be able to test locally as well as with Sauce Labs.&lt;/p&gt;
-&lt;h3&gt;Something to note&lt;/h3&gt;
-&lt;p&gt;I wouldn’t recommend running tests on Sauce Labs very often, as it is much slower than running locally, and isn’t possible to debug.&lt;/p&gt;
-&lt;p&gt;The best way to run tests during development is to open your &lt;code&gt;funcunit.html&lt;/code&gt; page in the browser you want to test in, the tests will then execute very quickly in a pop-up window.&lt;/p&gt;</content><summary type="html">How to use the FuncUnit web application testing framework with cloud-based Selenium service Sauce Labs</summary></entry><entry><id>tag:martinowen.net,2010-02-03:/blog/2010/02/03/tips-for-emacs-ibuffer.html</id><title type="html">Tips for using Emacs Ibuffer</title>
-<published>2010-02-<span class="caps">03T00</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html">
-<content type="html">&lt;p&gt;I’ve found that one of the most useful features of Emacs is also one of the most sparsely documented: &lt;a href=”http://www.emacswiki.org/emacs/IbufferMode”&gt;Ibuffer&lt;/a&gt;. It provides a way of filtering and then grouping the list of buffers that you currently have open, and greatly improves Emacs’ usability.&lt;/p&gt;
-&lt;p&gt;&lt;img src=”/assets/images/ibuffer.jpg” alt=”“&gt;&lt;/p&gt;
+&lt;p&gt;The settings in &lt;code&gt;settings.js&lt;/code&gt; will be loaded and the tests will be run on Sauce Labs’ machines, not yours. As long as you open your pages in your tests using &lt;code&gt;S.open('//index.html')&lt;/code&gt; the jmvcRoot will be applied and you will be able to test locally as well as with Sauce Labs.&lt;/p&gt;
+&lt;h3&gt;Something to note&lt;/h3&gt;
+&lt;p&gt;I wouldn’t recommend running tests on Sauce Labs very often, as it is much slower than running locally, and isn’t possible to debug.&lt;/p&gt;
+&lt;p&gt;The best way to run tests during development is to open your &lt;code&gt;funcunit.html&lt;/code&gt; page in the browser you want to test in, the tests will then execute very quickly in a pop-up window.&lt;/p&gt;</content>
+    <summary type="html">How to use the FuncUnit web application testing framework with cloud-based Selenium service Sauce Labs</summary>
+  </entry>
+  <entry>
+    <id>tag:martinowen.net,2010-02-03:/blog/2010/02/03/tips-for-emacs-ibuffer.html</id>
+    <title type="html">Tips for using Emacs Ibuffer</title>
+    <published>2010-02-03T00:00:00Z</published>
+    <updated>2013-04-06T14:26:02Z</updated>
+    <link rel="alternate" href="http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html"/>
+    <content type="html">&lt;p&gt;I’ve found that one of the most useful features of Emacs is also one of the most sparsely documented: &lt;a href="http://www.emacswiki.org/emacs/IbufferMode"&gt;Ibuffer&lt;/a&gt;. It provides a way of filtering and then grouping the list of buffers that you currently have open, and greatly improves Emacs’ usability.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/assets/images/ibuffer.jpg" alt=""&gt;&lt;/p&gt;
 &lt;h3&gt;Using Ibuffer&lt;/h3&gt;
-&lt;p&gt;First of all, rebind the standard buffer list key binding &lt;code&gt;C-x C-b&lt;/code&gt; to use Ibuffer:&lt;/p&gt;
-&lt;code class=”language-cl”&gt;&lt;div class=”highlight”&gt;&lt;table&gt;&lt;tr&gt;
-&lt;td class=”gutter”&gt;&lt;pre class=”line-numbers”&gt;&lt;span class=”line-number”&gt;1&lt;/span&gt;
+&lt;p&gt;First of all, rebind the standard buffer list key binding &lt;code&gt;C-x C-b&lt;/code&gt; to use Ibuffer:&lt;/p&gt;
+&lt;code class="language-cl"&gt;&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;
+&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;&lt;span class="line-number"&gt;1&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;
-&lt;td class=”code”&gt;&lt;pre&gt;&lt;code class=”cl”&gt;&lt;span class=”line”&gt;&lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;global-set-key&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;kbd&lt;/span&gt; &lt;span class=”s”&gt;”C-x C-b”&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt; &lt;span class=”ss”&gt;’ibuffer&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt; &lt;span class=”c1”&gt;;; Use Ibuffer for Buffer List&lt;/span&gt;
+&lt;td class="code"&gt;&lt;pre&gt;&lt;code class="cl"&gt;&lt;span class="line"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-x C-b"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;;; Use Ibuffer for Buffer List&lt;/span&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;p&gt;Once you’ve used Ibuffer you won’t be going back so you should put this in your .emacs.&lt;/p&gt;
-&lt;h4&gt;Defining your filter groups&lt;/h4&gt;
-&lt;p&gt;You can define your filters and groups in the buffer list itself, but I find that it is easier to specify them in my .emacs:&lt;/p&gt;
-&lt;code class=”language-cl”&gt;&lt;div class=”highlight”&gt;&lt;table&gt;&lt;tr&gt;
-&lt;td class=”gutter”&gt;&lt;pre class=”line-numbers”&gt;&lt;span class=”line-number”&gt;1&lt;/span&gt;
-&lt;span class=”line-number”&gt;2&lt;/span&gt;
-&lt;span class=”line-number”&gt;3&lt;/span&gt;
-&lt;span class=”line-number”&gt;4&lt;/span&gt;
-&lt;span class=”line-number”&gt;5&lt;/span&gt;
-&lt;span class=”line-number”&gt;6&lt;/span&gt;
-&lt;span class=”line-number”&gt;7&lt;/span&gt;
-&lt;span class=”line-number”&gt;8&lt;/span&gt;
-&lt;span class=”line-number”&gt;9&lt;/span&gt;
-&lt;span class=”line-number”&gt;10&lt;/span&gt;
-&lt;span class=”line-number”&gt;11&lt;/span&gt;
-&lt;span class=”line-number”&gt;12&lt;/span&gt;
-&lt;span class=”line-number”&gt;13&lt;/span&gt;
-&lt;span class=”line-number”&gt;14&lt;/span&gt;
-&lt;span class=”line-number”&gt;15&lt;/span&gt;
-&lt;span class=”line-number”&gt;16&lt;/span&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;p&gt;Once you’ve used Ibuffer you won’t be going back so you should put this in your .emacs.&lt;/p&gt;
+&lt;h4&gt;Defining your filter groups&lt;/h4&gt;
+&lt;p&gt;You can define your filters and groups in the buffer list itself, but I find that it is easier to specify them in my .emacs:&lt;/p&gt;
+&lt;code class="language-cl"&gt;&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;
+&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;&lt;span class="line-number"&gt;1&lt;/span&gt;
+&lt;span class="line-number"&gt;2&lt;/span&gt;
+&lt;span class="line-number"&gt;3&lt;/span&gt;
+&lt;span class="line-number"&gt;4&lt;/span&gt;
+&lt;span class="line-number"&gt;5&lt;/span&gt;
+&lt;span class="line-number"&gt;6&lt;/span&gt;
+&lt;span class="line-number"&gt;7&lt;/span&gt;
+&lt;span class="line-number"&gt;8&lt;/span&gt;
+&lt;span class="line-number"&gt;9&lt;/span&gt;
+&lt;span class="line-number"&gt;10&lt;/span&gt;
+&lt;span class="line-number"&gt;11&lt;/span&gt;
+&lt;span class="line-number"&gt;12&lt;/span&gt;
+&lt;span class="line-number"&gt;13&lt;/span&gt;
+&lt;span class="line-number"&gt;14&lt;/span&gt;
+&lt;span class="line-number"&gt;15&lt;/span&gt;
+&lt;span class="line-number"&gt;16&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;
-&lt;td class=”code”&gt;&lt;pre&gt;&lt;code class=”cl”&gt;&lt;span class=”line”&gt;&lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”k”&gt;setq&lt;/span&gt; &lt;span class=”nv”&gt;ibuffer-saved-filter-groups&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;      &lt;span class=”o”&gt;’&lt;/span&gt;&lt;span class=”p”&gt;((&lt;/span&gt;&lt;span class=”s”&gt;”home”&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	 &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s”&gt;”emacs-config”&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nb”&gt;or&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;filename&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”.emacs.d”&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;			     &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;filename&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”emacs-config”&lt;/span&gt;&lt;span class=”p”&gt;)))&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;         &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s”&gt;”martinowen.net”&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;filename&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”martinowen.net”&lt;/span&gt;&lt;span class=”p”&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	 &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s”&gt;”Org”&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nb”&gt;or&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;mode&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”nv”&gt;org-mode&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;		    &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;filename&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”OrgMode”&lt;/span&gt;&lt;span class=”p”&gt;)))&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;         &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s”&gt;”code”&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;filename&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”code”&lt;/span&gt;&lt;span class=”p”&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	 &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s”&gt;”Web Dev”&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nb”&gt;or&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;mode&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”nv”&gt;html-mode&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;			&lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;mode&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”nv”&gt;css-mode&lt;/span&gt;&lt;span class=”p”&gt;)))&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	 &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s”&gt;”Subversion”&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;name&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”\*svn”&lt;/span&gt;&lt;span class=”p”&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	 &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s”&gt;”Magit”&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;name&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”\*magit”&lt;/span&gt;&lt;span class=”p”&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	 &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s”&gt;”<span class="caps">ERC</span>”&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;mode&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”nv”&gt;erc-mode&lt;/span&gt;&lt;span class=”p”&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	 &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”s”&gt;”Help”&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nb”&gt;or&lt;/span&gt; &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;name&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”\*Help\*”&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;		     &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;name&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”\*Apropos\*”&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;		     &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;name&lt;/span&gt; &lt;span class=”o”&gt;.&lt;/span&gt; &lt;span class=”s”&gt;”\*info\*”&lt;/span&gt;&lt;span class=”p”&gt;))))))&lt;/span&gt;
+&lt;td class="code"&gt;&lt;pre&gt;&lt;code class="cl"&gt;&lt;span class="line"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ibuffer-saved-filter-groups&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;      &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"home"&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"emacs-config"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;or&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;".emacs.d"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;			     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"emacs-config"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;         &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"martinowen.net"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"martinowen.net"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Org"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;or&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;org-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;		    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"OrgMode"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;         &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"code"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;filename&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"code"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Web Dev"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;or&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;html-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;			&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;css-mode&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Subversion"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"\*svn"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Magit"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"\*magit"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ERC"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;erc-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Help"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;or&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"\*Help\*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;		     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"\*Apropos\*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;		     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"\*info\*"&lt;/span&gt;&lt;span class="p"&gt;))))))&lt;/span&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;p&gt;I then load the saved filter group by name in the &lt;code&gt;ibuffer-mode-hook&lt;/code&gt; so that a particular filter is always loaded automatically:&lt;/p&gt;
-&lt;code class=”language-cl”&gt;&lt;div class=”highlight”&gt;&lt;table&gt;&lt;tr&gt;
-&lt;td class=”gutter”&gt;&lt;pre class=”line-numbers”&gt;&lt;span class=”line-number”&gt;1&lt;/span&gt;
-&lt;span class=”line-number”&gt;2&lt;/span&gt;
-&lt;span class=”line-number”&gt;3&lt;/span&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;p&gt;I then load the saved filter group by name in the &lt;code&gt;ibuffer-mode-hook&lt;/code&gt; so that a particular filter is always loaded automatically:&lt;/p&gt;
+&lt;code class="language-cl"&gt;&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;
+&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;&lt;span class="line-number"&gt;1&lt;/span&gt;
+&lt;span class="line-number"&gt;2&lt;/span&gt;
+&lt;span class="line-number"&gt;3&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;
-&lt;td class=”code”&gt;&lt;pre&gt;&lt;code class=”cl”&gt;&lt;span class=”line”&gt;&lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;add-hook&lt;/span&gt; &lt;span class=”ss”&gt;’ibuffer-mode-hook&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	  &lt;span class=”o”&gt;’&lt;/span&gt;&lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”k”&gt;lambda&lt;/span&gt; &lt;span class=”p”&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	     &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;ibuffer-switch-to-saved-filter-groups&lt;/span&gt; &lt;span class=”s”&gt;”home”&lt;/span&gt;&lt;span class=”p”&gt;)))&lt;/span&gt;
+&lt;td class="code"&gt;&lt;pre&gt;&lt;code class="cl"&gt;&lt;span class="line"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer-mode-hook&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;ibuffer-switch-to-saved-filter-groups&lt;/span&gt; &lt;span class="s"&gt;"home"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;p&gt;I actually have different filter groups for work and home, and load them according to a global &lt;code&gt;location&lt;/code&gt; variable.&lt;/p&gt;
-&lt;h3&gt;Other useful options&lt;/h3&gt;
-&lt;p&gt;There are a few other useful options that I didn’t find out about until I looked through the source:&lt;/p&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;p&gt;I actually have different filter groups for work and home, and load them according to a global &lt;code&gt;location&lt;/code&gt; variable.&lt;/p&gt;
+&lt;h3&gt;Other useful options&lt;/h3&gt;
+&lt;p&gt;There are a few other useful options that I didn’t find out about until I looked through the source:&lt;/p&gt;
 &lt;h4&gt;ibuffer-expert&lt;/h4&gt;
-&lt;p&gt;Unless you turn this variable on you will be prompted every time you want to delete a buffer, even unmodified ones, which is way too cautious for most people. You’ll still be prompted for confirmation when deleting modified buffers after the option has been turned off.&lt;/p&gt;
-&lt;code class=”language-cl”&gt;&lt;div class=”highlight”&gt;&lt;table&gt;&lt;tr&gt;
-&lt;td class=”gutter”&gt;&lt;pre class=”line-numbers”&gt;&lt;span class=”line-number”&gt;1&lt;/span&gt;
+&lt;p&gt;Unless you turn this variable on you will be prompted every time you want to delete a buffer, even unmodified ones, which is way too cautious for most people. You’ll still be prompted for confirmation when deleting modified buffers after the option has been turned off.&lt;/p&gt;
+&lt;code class="language-cl"&gt;&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;
+&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;&lt;span class="line-number"&gt;1&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;
-&lt;td class=”code”&gt;&lt;pre&gt;&lt;code class=”cl”&gt;&lt;span class=”line”&gt;&lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”k”&gt;setq&lt;/span&gt; &lt;span class=”nv”&gt;ibuffer-expert&lt;/span&gt; &lt;span class=”no”&gt;t&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt; &lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;h4&gt;ibuffer-show-empty-filter-groups&lt;/h4&gt;
-&lt;p&gt;Turning off &lt;code&gt;ibuffer-show-empty-filter-groups&lt;/code&gt; is particularly useful, because the empty filter groups can really clutter things up.&lt;/p&gt;
-&lt;code class=”language-cl”&gt;&lt;div class=”highlight”&gt;&lt;table&gt;&lt;tr&gt;
-&lt;td class=”gutter”&gt;&lt;pre class=”line-numbers”&gt;&lt;span class=”line-number”&gt;1&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=”code”&gt;&lt;pre&gt;&lt;code class=”cl”&gt;&lt;span class=”line”&gt;&lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”k”&gt;setq&lt;/span&gt; &lt;span class=”nv”&gt;ibuffer-show-empty-filter-groups&lt;/span&gt; &lt;span class=”no”&gt;nil&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt; &lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;h4&gt;ibuffer-auto-mode&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;ibuffer-auto-mode&lt;/code&gt; is a minor mode that automatically keeps the buffer list up to date. I turn it on in my &lt;code&gt;ibuffer-mode-hook&lt;/code&gt;:&lt;/p&gt;
-&lt;code class=”language-cl”&gt;&lt;div class=”highlight”&gt;&lt;table&gt;&lt;tr&gt;
-&lt;td class=”gutter”&gt;&lt;pre class=”line-numbers”&gt;&lt;span class=”line-number”&gt;1&lt;/span&gt;
-&lt;span class=”line-number”&gt;2&lt;/span&gt;
-&lt;span class=”line-number”&gt;3&lt;/span&gt;
-&lt;span class=”line-number”&gt;4&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=”code”&gt;&lt;pre&gt;&lt;code class=”cl”&gt;&lt;span class=”line”&gt;&lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;add-hook&lt;/span&gt; &lt;span class=”ss”&gt;’ibuffer-mode-hook&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	  &lt;span class=”o”&gt;’&lt;/span&gt;&lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”k”&gt;lambda&lt;/span&gt; &lt;span class=”p”&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	     &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;ibuffer-auto-mode&lt;/span&gt; &lt;span class=”mi”&gt;1&lt;/span&gt;&lt;span class=”p”&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;span class=”line”&gt;	     &lt;span class=”p”&gt;(&lt;/span&gt;&lt;span class=”nv”&gt;ibuffer-switch-to-saved-filter-groups&lt;/span&gt; &lt;span class=”s”&gt;”home”&lt;/span&gt;&lt;span class=”p”&gt;)))&lt;/span&gt;
+&lt;td class="code"&gt;&lt;pre&gt;&lt;code class="cl"&gt;&lt;span class="line"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ibuffer-expert&lt;/span&gt; &lt;span class="no"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;h3&gt;Filtering Dired buffers by filename&lt;/h3&gt;
-&lt;p&gt;This is something I had a problem with when I upgraded to Emacs &lt;span class=”caps”&gt;<span class="caps">23.1.</span>&lt;/span&gt; The latest version of Ibuffer doesn’t filter Dired buffers by the filename of the directory. This isn’t what I want – if I specify I filename filter I want any buffer with that filename to appear.&lt;/p&gt;
-&lt;p&gt;Rather than doing diffs against the &lt;span class=”caps”&gt;<span class="caps">22.3</span>&lt;/span&gt; versions of the Ibuffer files to determine the changes (and possibly undo them) I’ve just copied the old versions from the ‘lisp’ directory of Emacs &lt;span class=”caps”&gt;<span class="caps">22.3</span>&lt;/span&gt; To a ‘vendor’ directory in my .emacs.d and loaded that.&lt;/p&gt;
-&lt;p&gt;If I find a better way to solve this problem I’ll post an update.&lt;/p&gt;</content><summary type="html">Some settings for the Emacs Ibuffer mode, vital for managing large numbers of buffers.</summary></entry><entry><id>tag:martinowen.net,2009-11-14:/blog/2009/11/14/playing-with-mozilla-ubiquity.html</id><title type="html">Playing with Mozilla Ubiquity</title>
-<published>2009-11-<span class="caps">14T00</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2009/11/14/playing-with-mozilla-ubiquity.html">
-<content type="html">&lt;p&gt;I took a look at &lt;a href=”https://mozillalabs.com/ubiquity/”&gt;Mozilla Ubiquity&lt;/a&gt; recently, which is best described as an attempt at a natural language launcher for web services. It reminds me of the Mac launcher app &lt;a href=”http://en.wikipedia.org/wiki/Quicksilver_%28software%29”&gt;Quicksilver&lt;/a&gt;. For example, if you type “weather liverpool” into it, you get the weather for Liverpool.&lt;/p&gt;
-&lt;p&gt;I personally really like this kind of thing because it means that I don’t have to use the mouse.&lt;/p&gt;
-&lt;h3&gt;The built-in commands&lt;/h3&gt;
-&lt;p&gt;Ubiquity comes with a number of built-in commands which I’m sure you can imagine:&lt;/p&gt;
-&lt;ul&gt; &lt;li&gt;
-&lt;code&gt;imdb star wars&lt;/code&gt; will take you to the Star Wars page on the &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">IMDB</span>&lt;/span&gt;&lt;/span&gt;.&lt;/li&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;h4&gt;ibuffer-show-empty-filter-groups&lt;/h4&gt;
+&lt;p&gt;Turning off &lt;code&gt;ibuffer-show-empty-filter-groups&lt;/code&gt; is particularly useful, because the empty filter groups can really clutter things up.&lt;/p&gt;
+&lt;code class="language-cl"&gt;&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;
+&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;&lt;span class="line-number"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="code"&gt;&lt;pre&gt;&lt;code class="cl"&gt;&lt;span class="line"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ibuffer-show-empty-filter-groups&lt;/span&gt; &lt;span class="no"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;h4&gt;ibuffer-auto-mode&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;ibuffer-auto-mode&lt;/code&gt; is a minor mode that automatically keeps the buffer list up to date. I turn it on in my &lt;code&gt;ibuffer-mode-hook&lt;/code&gt;:&lt;/p&gt;
+&lt;code class="language-cl"&gt;&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;
+&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;&lt;span class="line-number"&gt;1&lt;/span&gt;
+&lt;span class="line-number"&gt;2&lt;/span&gt;
+&lt;span class="line-number"&gt;3&lt;/span&gt;
+&lt;span class="line-number"&gt;4&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="code"&gt;&lt;pre&gt;&lt;code class="cl"&gt;&lt;span class="line"&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer-mode-hook&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;ibuffer-auto-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class="line"&gt;	     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;ibuffer-switch-to-saved-filter-groups&lt;/span&gt; &lt;span class="s"&gt;"home"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/code&gt;&lt;h3&gt;Filtering Dired buffers by filename&lt;/h3&gt;
+&lt;p&gt;This is something I had a problem with when I upgraded to Emacs &lt;span class="caps"&gt;23.1.&lt;/span&gt; The latest version of Ibuffer doesn’t filter Dired buffers by the filename of the directory. This isn’t what I want – if I specify I filename filter I want any buffer with that filename to appear.&lt;/p&gt;
+&lt;p&gt;Rather than doing diffs against the &lt;span class="caps"&gt;22.3&lt;/span&gt; versions of the Ibuffer files to determine the changes (and possibly undo them) I’ve just copied the old versions from the ‘lisp’ directory of Emacs &lt;span class="caps"&gt;22.3&lt;/span&gt; To a ‘vendor’ directory in my .emacs.d and loaded that.&lt;/p&gt;
+&lt;p&gt;If I find a better way to solve this problem I’ll post an update.&lt;/p&gt;</content>
+    <summary type="html">Some settings for the Emacs Ibuffer mode, vital for managing large numbers of buffers.</summary>
+  </entry>
+  <entry>
+    <id>tag:martinowen.net,2009-11-14:/blog/2009/11/14/playing-with-mozilla-ubiquity.html</id>
+    <title type="html">Playing with Mozilla Ubiquity</title>
+    <published>2009-11-14T00:00:00Z</published>
+    <updated>2013-04-06T14:26:02Z</updated>
+    <link rel="alternate" href="http://martinowen.net/blog/2009/11/14/playing-with-mozilla-ubiquity.html"/>
+    <content type="html">&lt;p&gt;I took a look at &lt;a href="https://mozillalabs.com/ubiquity/"&gt;Mozilla Ubiquity&lt;/a&gt; recently, which is best described as an attempt at a natural language launcher for web services. It reminds me of the Mac launcher app &lt;a href="http://en.wikipedia.org/wiki/Quicksilver_%28software%29"&gt;Quicksilver&lt;/a&gt;. For example, if you type “weather liverpool” into it, you get the weather for Liverpool.&lt;/p&gt;
+&lt;p&gt;I personally really like this kind of thing because it means that I don’t have to use the mouse.&lt;/p&gt;
+&lt;h3&gt;The built-in commands&lt;/h3&gt;
+&lt;p&gt;Ubiquity comes with a number of built-in commands which I’m sure you can imagine:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;code&gt;imdb star wars&lt;/code&gt; will take you to the Star Wars page on the &lt;span class="caps"&gt;&lt;span class="caps"&gt;IMDB&lt;/span&gt;&lt;/span&gt;.&lt;/li&gt;
 	&lt;li&gt;
-&lt;code&gt;lookup gandhi&lt;/code&gt; will take you to the Gandhi entry of Wikipedia.&lt;/li&gt;
+&lt;code&gt;lookup gandhi&lt;/code&gt; will take you to the Gandhi entry of Wikipedia.&lt;/li&gt;
 	&lt;li&gt;
-&lt;code&gt;tweet The text of a Tweet&lt;/code&gt; will post a Tweet.&lt;/li&gt;
+&lt;code&gt;tweet The text of a Tweet&lt;/code&gt; will post a Tweet.&lt;/li&gt;
 	&lt;li&gt;
-&lt;code&gt;map 10 downing street london&lt;/code&gt; will get you a Google Map of the British Prime Minister’s house.&lt;/li&gt;
+&lt;code&gt;map 10 downing street london&lt;/code&gt; will get you a Google Map of the British Prime Minister’s house.&lt;/li&gt;
 	&lt;li&gt;
-&lt;code&gt;translate english spanish&lt;/code&gt; will Google Translate the selected text from English to Spanish.&lt;/li&gt;
-&lt;/ul&gt;&lt;h3&gt;Playing with a command&lt;/h3&gt;
-&lt;p&gt;Soon after installing Ubiquity and playing with the built-in commands, I found a &lt;a href=”http://github.com/elson/ubiquity-bbc-iplayer”&gt;&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">BBC</span>&lt;/span&gt;&lt;/span&gt; iPlayer command&lt;/a&gt; that needed upgrading to the latest language &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">API</span>&lt;/span&gt;&lt;/span&gt;. I found this to be quite difficult, because there isn’t a great deal of support for debugging Ubiquity commands at the moment.&lt;/p&gt;
-&lt;p&gt;If you’re going to try to develop commands, I’d suggest using the &lt;code&gt;CmdUtils.log()&lt;/code&gt; utility function to write debug messages to the console log in Firebug. The messages will only appear if you have turned on “Show Chrome Messages” on the Console menu.&lt;/p&gt;
-&lt;p&gt;I eventually got the command working and the changes were merged into the master branch.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">UPDATE</span>&lt;/span&gt;&lt;/span&gt; 2010/03:&lt;/strong&gt; Ubiquity has now been put on the back-burner by Mozilla, in favour of &lt;a href=”https://jetpack.mozillalabs.com/”&gt;Jetpack&lt;/a&gt;. As the developers found it quite difficult to upgrade the latest version to work with Firefox &lt;span class=”caps”&gt;<span class="caps">3.6</span>&lt;/span&gt;, only the earlier &lt;span class=”caps”&gt;<span class="caps">0.1</span>&lt;/span&gt; version of the extension has been upgraded to work with it.&lt;/p&gt;</content><summary type="html">Getting to know Mozilla’s impressive new Ubiquity Firefox extension, and my experiences of working on a command for it.</summary></entry><entry><id>tag:martinowen.net,2009-10-25:/blog/2009/10/25/compass-to-the-rescue.html</id><title type="html">Compass to the Rescue</title>
-<published>2009-10-<span class="caps">24T23</span>:00:<span class="caps">00Z</span></published><updated>2013-04-<span class="caps">06T14</span>:26:<span class="caps">02Z</span></updated><link rel="alternate" href="http://martinowen.net/blog/2009/10/25/compass-to-the-rescue.html">
-<content type="html">&lt;h3&gt;
-&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; and Me&lt;/h3&gt;
-&lt;p&gt;For years I’ve been on the lookout for things that simplify the process of writing &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; because, as I’m a programmer, I &lt;a href=”http://www.betaversion.org/~stefano/linotype/news/169/”&gt;suck at it&lt;/a&gt;. I’ve tried many times in the past to persevere with my own designs, and although I know how the whole &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HTML</span>&lt;/span&gt;&lt;/span&gt;/&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; thing hangs together, I always end up going with a template lifted from the web, with some of my own minor tweaks.&lt;/p&gt;
-&lt;p&gt;This is probably because I lack the tools to build layouts, as like most non-designers, I don’t want to fork out a Photoshop licence fee. So I’m always keen to try out open source tools that make my &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; easier.&lt;/p&gt;
+&lt;code&gt;translate english spanish&lt;/code&gt; will Google Translate the selected text from English to Spanish.&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;Playing with a command&lt;/h3&gt;
+&lt;p&gt;Soon after installing Ubiquity and playing with the built-in commands, I found a &lt;a href="http://github.com/elson/ubiquity-bbc-iplayer"&gt;&lt;span class="caps"&gt;&lt;span class="caps"&gt;BBC&lt;/span&gt;&lt;/span&gt; iPlayer command&lt;/a&gt; that needed upgrading to the latest language &lt;span class="caps"&gt;&lt;span class="caps"&gt;API&lt;/span&gt;&lt;/span&gt;. I found this to be quite difficult, because there isn’t a great deal of support for debugging Ubiquity commands at the moment.&lt;/p&gt;
+&lt;p&gt;If you’re going to try to develop commands, I’d suggest using the &lt;code&gt;CmdUtils.log()&lt;/code&gt; utility function to write debug messages to the console log in Firebug. The messages will only appear if you have turned on “Show Chrome Messages” on the Console menu.&lt;/p&gt;
+&lt;p&gt;I eventually got the command working and the changes were merged into the master branch.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;&lt;span class="caps"&gt;UPDATE&lt;/span&gt;&lt;/span&gt; 2010/03:&lt;/strong&gt; Ubiquity has now been put on the back-burner by Mozilla, in favour of &lt;a href="https://jetpack.mozillalabs.com/"&gt;Jetpack&lt;/a&gt;. As the developers found it quite difficult to upgrade the latest version to work with Firefox &lt;span class="caps"&gt;3.6&lt;/span&gt;, only the earlier &lt;span class="caps"&gt;0.1&lt;/span&gt; version of the extension has been upgraded to work with it.&lt;/p&gt;</content>
+    <summary type="html">Getting to know Mozilla's impressive new Ubiquity Firefox extension, and my experiences of working on a command for it.</summary>
+  </entry>
+  <entry>
+    <id>tag:martinowen.net,2009-10-25:/blog/2009/10/25/compass-to-the-rescue.html</id>
+    <title type="html">Compass to the Rescue</title>
+    <published>2009-10-24T23:00:00Z</published>
+    <updated>2013-04-06T14:26:02Z</updated>
+    <link rel="alternate" href="http://martinowen.net/blog/2009/10/25/compass-to-the-rescue.html"/>
+    <content type="html">&lt;h3&gt;
+&lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; and Me&lt;/h3&gt;
+&lt;p&gt;For years I’ve been on the lookout for things that simplify the process of writing &lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; because, as I’m a programmer, I &lt;a href="http://www.betaversion.org/~stefano/linotype/news/169/"&gt;suck at it&lt;/a&gt;. I’ve tried many times in the past to persevere with my own designs, and although I know how the whole &lt;span class="caps"&gt;&lt;span class="caps"&gt;HTML&lt;/span&gt;&lt;/span&gt;/&lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; thing hangs together, I always end up going with a template lifted from the web, with some of my own minor tweaks.&lt;/p&gt;
+&lt;p&gt;This is probably because I lack the tools to build layouts, as like most non-designers, I don’t want to fork out a Photoshop licence fee. So I’m always keen to try out open source tools that make my &lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; easier.&lt;/p&gt;
 &lt;h3&gt;
-&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; for Programmers&lt;/h3&gt;
-&lt;p&gt;The first time I used &lt;a href=”http://sass-lang.com/”&gt;&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; I was quite impressed, particularly with the ability to &lt;a href=”http://sass-lang.com/#variables”&gt;define variables&lt;/a&gt;, as it meant that I wouldn’t have to use Find and Replace every two minutes. But I still saw it as a second-class offshoot of &lt;a href=”http://haml-lang.com/”&gt;&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HAML</span>&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;. Now that I’ve got to know it I think of it as the preprocessor that &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; has needed for so long.&lt;/p&gt;
-&lt;h4&gt;Greater than the sum of its parts&lt;/h4&gt;
-&lt;p&gt;At the same time as I was initially playing with &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HAML</span>&lt;/span&gt;&lt;/span&gt; and &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt;, I also came across &lt;a href=”http://www.blueprintcss.org/”&gt;Blueprint&lt;/a&gt; and thought that it was the answer to my &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; prayers. But after a while I realised that something was still missing. Then I found &lt;a href=”http://compass-style.org/”&gt;Compass&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Compass calls itself a “Meta-Framework”, a term I can’t resist (we’ve reached the point where we have frameworks of frameworks, which makes me chuckle.) It combines the various &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; frameworks (Blueprint, Yahoo! &lt;span class=”caps”&gt;<span class="caps">UI</span>&lt;/span&gt;, 960 Grid System) with &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt; to create something that is much better than the sum of its parts.&lt;/p&gt;
-&lt;p&gt;By default it uses Blueprint to provide a grid system and baseline. It provides &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt; mixins (which you can think of as &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; macros) which allow you to &lt;a href=”http://wiki.github.com/chriseppstein/compass/blueprint-documentation-grid-module”&gt;define your grid in &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt; without modifiying the &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">HTML</span>&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;. I like this as it keeps the layout in the &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt; where it belongs.&lt;/p&gt;
-&lt;h4&gt;Good with colours&lt;/h4&gt;
-&lt;p&gt;Compass also features &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt; mixins for manipulating colours, via a module named &lt;a href=”http://github.com/chriseppstein/compass-colors”&gt;compass-colors&lt;/a&gt;. The module allows you to lighten and darken colours, and even adjust the hue and saturation:&lt;/p&gt;
-&lt;pre&gt;!font_color= lighten(#000, 20)
-!other_font_color= adjust-hue(#cc3, 20deg)
+&lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; for Programmers&lt;/h3&gt;
+&lt;p&gt;The first time I used &lt;a href="http://sass-lang.com/"&gt;&lt;span class="caps"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; I was quite impressed, particularly with the ability to &lt;a href="http://sass-lang.com/#variables"&gt;define variables&lt;/a&gt;, as it meant that I wouldn’t have to use Find and Replace every two minutes. But I still saw it as a second-class offshoot of &lt;a href="http://haml-lang.com/"&gt;&lt;span class="caps"&gt;&lt;span class="caps"&gt;HAML&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;. Now that I’ve got to know it I think of it as the preprocessor that &lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; has needed for so long.&lt;/p&gt;
+&lt;h4&gt;Greater than the sum of its parts&lt;/h4&gt;
+&lt;p&gt;At the same time as I was initially playing with &lt;span class="caps"&gt;&lt;span class="caps"&gt;HAML&lt;/span&gt;&lt;/span&gt; and &lt;span class="caps"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/span&gt;, I also came across &lt;a href="http://www.blueprintcss.org/"&gt;Blueprint&lt;/a&gt; and thought that it was the answer to my &lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; prayers. But after a while I realised that something was still missing. Then I found &lt;a href="http://compass-style.org/"&gt;Compass&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Compass calls itself a “Meta-Framework”, a term I can’t resist (we’ve reached the point where we have frameworks of frameworks, which makes me chuckle.) It combines the various &lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; frameworks (Blueprint, Yahoo! &lt;span class="caps"&gt;UI&lt;/span&gt;, 960 Grid System) with &lt;span class="caps"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/span&gt; to create something that is much better than the sum of its parts.&lt;/p&gt;
+&lt;p&gt;By default it uses Blueprint to provide a grid system and baseline. It provides &lt;span class="caps"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/span&gt; mixins (which you can think of as &lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; macros) which allow you to &lt;a href="http://wiki.github.com/chriseppstein/compass/blueprint-documentation-grid-module"&gt;define your grid in &lt;span class="caps"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/span&gt; without modifiying the &lt;span class="caps"&gt;&lt;span class="caps"&gt;HTML&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;. I like this as it keeps the layout in the &lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt; where it belongs.&lt;/p&gt;
+&lt;h4&gt;Good with colours&lt;/h4&gt;
+&lt;p&gt;Compass also features &lt;span class="caps"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/span&gt; mixins for manipulating colours, via a module named &lt;a href="http://github.com/chriseppstein/compass-colors"&gt;compass-colors&lt;/a&gt;. The module allows you to lighten and darken colours, and even adjust the hue and saturation:&lt;/p&gt;
+&lt;pre&gt;!font_color= lighten(#000, 20)
+!other_font_color= adjust-hue(#cc3, 20deg)
 &lt;/pre&gt;
-&lt;p&gt;I’ve liked the idea of colour manipulation functions since I first saw them in the &lt;a href=”http://nodebox.net/code/index.php/Colors”&gt;NodeBox Colors&lt;/a&gt; library. Compass-colors helps you to build themes with &lt;a href=”http://chriseppstein.github.com/compass-colors/”&gt;complimentary and analogous color mixins&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;There’s also a &lt;a href=”http://github.com/chriseppstein/compass/blob/master/frameworks/compass/stylesheets/compass/utilities/links/_link_colors.sass”&gt;link_colors mixin&lt;/a&gt; which defines all of the colours for the various link pseudo-classes in one mixin call.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">UPDATE</span>&lt;/span&gt;&lt;/span&gt;:&lt;/strong&gt; &lt;a href=”http://nex-3.com/posts/89-powerful-color-manipulation-with-sass”&gt;compass-colors is now part of &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; as of v&lt;span class=”caps”&gt;<span class="caps">2.4</span>&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I’ve liked the idea of colour manipulation functions since I first saw them in the &lt;a href="http://nodebox.net/code/index.php/Colors"&gt;NodeBox Colors&lt;/a&gt; library. Compass-colors helps you to build themes with &lt;a href="http://chriseppstein.github.com/compass-colors/"&gt;complimentary and analogous color mixins&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There’s also a &lt;a href="http://github.com/chriseppstein/compass/blob/master/frameworks/compass/stylesheets/compass/utilities/links/_link_colors.sass"&gt;link_colors mixin&lt;/a&gt; which defines all of the colours for the various link pseudo-classes in one mixin call.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;&lt;span class="caps"&gt;UPDATE&lt;/span&gt;&lt;/span&gt;:&lt;/strong&gt; &lt;a href="http://nex-3.com/posts/89-powerful-color-manipulation-with-sass"&gt;compass-colors is now part of &lt;span class="caps"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; as of v&lt;span class="caps"&gt;2.4&lt;/span&gt;&lt;/p&gt;
 &lt;h4&gt;Syntax&lt;/h4&gt;
-&lt;p&gt;My only complaint with &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt; is that the syntax seems a little unnatural. Mixins are prefixed with a “+” and variables are prefixed with a “!”, which I don’t like because it makes conditional statements look a little strange:&lt;/p&gt;
-&lt;pre&gt;@if !bold
-  font-weight: bold
+&lt;p&gt;My only complaint with &lt;span class="caps"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/span&gt; is that the syntax seems a little unnatural. Mixins are prefixed with a “+” and variables are prefixed with a “!”, which I don’t like because it makes conditional statements look a little strange:&lt;/p&gt;
+&lt;pre&gt;@if !bold
+  font-weight: bold
 &lt;/pre&gt;
-&lt;p&gt;Which to me reads as “if bold is false, set the font-weight to bold” when in fact it means the opposite. A more standard variable prefix like “$” would have seemed more natural.&lt;/p&gt;
-&lt;p&gt;But that’s just me nit-picking. I love the project after all. If you’re a programmer who hates &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">CSS</span>&lt;/span&gt;&lt;/span&gt;, you really should give &lt;span class=”caps”&gt;&lt;span class=”caps”&gt;<span class="caps">SASS</span>&lt;/span&gt;&lt;/span&gt; and Compass a try.&lt;/p&gt;</content><summary type="html">How the Compass <span class="caps">CSS</span> &amp;ldquo;Meta-Framework&amp;rdquo; has taken the pain out of my stylesheets. Something for which I am eternally grateful.</summary></entry></feed>
-          </section>
-        
-      </section>
-      <footer>
-        <nav class='tags'>
-  <ul>
-    <li>
-      <a class='tag' href='/tags/.net/'>.net&nbsp;(1)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/arduino/'>arduino&nbsp;(1)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/emacs/'>emacs&nbsp;(1)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/erlang/'>erlang&nbsp;(1)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/event/'>event&nbsp;(2)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/funcunit/'>funcunit&nbsp;(1)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/git/'>git&nbsp;(1)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/javascript/'>javascript&nbsp;(2)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/liverpool/'>liverpool&nbsp;(4)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/powershell/'>powershell&nbsp;(1)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/slides/'>slides&nbsp;(2)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/testing/'>testing&nbsp;(1)</a>
-    </li>
-    <li>
-      <a class='tag' href='/tags/tools/'>tools&nbsp;(1)</a>
-    </li>
-  </ul>
-</nav>
-<small>
-  <p>&copy; 2013 Martin Owen | Tools: <a href="http://nanoc.stoneship.org/">nanoc</a>, <a href="http://haml-lang.com/"><span class="caps">HAML</span>/<span class="caps">SASS</span></a> ,<a href="http://compass-style.org/">Compass</a>, <a href="http://html5boilerplate.com/">HTML5BP</a>, <a href="http://coffeescript.org/">CoffeeScript</a></p>
-</small>
-
-      </footer>
-    </div>
-
-    <!-- JavaScript at the bottom for fast page loading -->
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-    <script src="/js/plugins.js"></script>
-    <script src="/js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      var _gaq=[['_setAccount','UA-3614897-1'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-  </body>
-</html>
+&lt;p&gt;Which to me reads as “if bold is false, set the font-weight to bold” when in fact it means the opposite. A more standard variable prefix like “$” would have seemed more natural.&lt;/p&gt;
+&lt;p&gt;But that’s just me nit-picking. I love the project after all. If you’re a programmer who hates &lt;span class="caps"&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt;&lt;/span&gt;, you really should give &lt;span class="caps"&gt;&lt;span class="caps"&gt;SASS&lt;/span&gt;&lt;/span&gt; and Compass a try.&lt;/p&gt;</content>
+    <summary type="html">How the Compass CSS &amp;ldquo;Meta-Framework&amp;rdquo; has taken the pain out of my stylesheets. Something for which I am eternally grateful.</summary>
+  </entry>
+</feed>
