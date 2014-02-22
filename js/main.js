@@ -6,7 +6,6 @@ Author: Martin Owen
 (function() {
   $(function() {
     var options;
-
     return options = {
       "in": {
         effect: 'tada',
